@@ -200,7 +200,7 @@
 }
 .camera_caption .bd-ra span {line-height: 94px;}
 .camera_caption .bd-ra:hover {
-	background: #e74c3c;
+	background: #fbbb4d;
 }
 .camera_caption > div { }
 .camerarelative {
@@ -305,13 +305,13 @@
 	display: block;
 }
 .camera_pag .camera_pag_ul li.camera_hover > span { 
-	border-color: #e74c3c
+	border-color: #fbbb4d
 }
 .camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span {
 	width: 19px;
 	height: 19px;
-	background: #e74c3c;
-	border-color: #e74c3c;
+	background: #fbbb4d;
+	border-color: #fbbb4d;
 }
 .camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span {
 	-moz-box-shadow: 0;
@@ -319,7 +319,7 @@
 	width: 19px;
 	height: 19px;
 	box-shadow: 0;
-	background: #e74c3c;
+	background: #fbbb4d;
 }
 .camera_pag_ul li img {
 	display: none;
