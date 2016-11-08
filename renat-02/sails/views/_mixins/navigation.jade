@@ -1,0 +1,24 @@
+mixin Navigation(list)
+  for item in list
+    if (canSee(item, user))
+      if item.children
+        li.xn-openable
+          a(href=item.href ? item.href : '/')
+            if item.icon
+              span(class=item.icon)
+            span.xn-text !{item.name}
+          ul
+            for child in item.children
+              li
+                a(href=child.href ? child.href : '/')
+                  if child.icon
+                    i(class=child.icon)
+                  else
+                    i.fa.fa-minus
+                  | !{child.name}
+      else
+        li
+          a(href=item.href ? item.href : '/')
+              if item.icon
+                i(class=item.icon)
+              | !{item.name}

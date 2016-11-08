@@ -1,0 +1,238 @@
+extends ./_layouts/main.jade
+
+block append head
+  //- script(src='/ViewControllers/index.js')
+  //- style.
+
+
+block content
+  // Swiper
+  section.rd-parallax.rd-parallax-swiper(
+    data-on='false', 
+    data-lg-on='true'
+    )
+    .rd-parallax-layer(
+      data-speed='0.2', 
+      data-sm-speed='0.4', 
+      data-type='html', 
+      data-direction='normal'
+      )
+      .swiper-container.swiper-slider(
+        data-loop='true', 
+        data-height='100vh', 
+        data-dragable='false', 
+        data-min-height='480px'
+        )
+        .swiper-wrapper.text-center
+          .swiper-slide(
+            data-slide-bg='images/home-1-2050x935.jpg'
+            )
+            .swiper-caption.swiper-parallax(
+              data-speed='1', 
+              data-fade='false'
+              )
+              .swiper-slide-caption.section-50
+                .shell
+                  .range.range-xs-center
+                    .cell-sm-10.cell-xl-12
+                      h1.text-light(
+                        data-caption-animate='fadeInUp', 
+                        data-caption-delay='100'
+                        )
+                        | Because Money Doesn't Come
+                        br
+                        span.text-regular With Instructions
+                      .h4.text-light(
+                        data-caption-animate='fadeInUp', 
+                        data-caption-delay='200'
+                        )
+                        | Sure, dealing with your finances can be intimidating. That's why we take the time to listen to you, learn your goals and then create your plan using John Doe's philosophies that reflect the latest academic research.
+                      .btn-group-wrap(
+                        data-caption-animate='fadeInUp', 
+                        data-caption-delay='300'
+                        )
+                        a.btn.btn-md.btn-white(href='advice.html'
+                        )
+                          span  Learn More
+                        a.btn.btn-md.btn-white(href='free-consultation.html'
+                        )
+                          span  Become a Client
+          .swiper-slide(
+            data-slide-bg='images/home-2-2050x935.jpg'
+            )
+            .swiper-caption.swiper-parallax(
+              data-speed='1', 
+              data-fade='false'
+              )
+              .swiper-slide-caption.section-top-30.section-bottom-34
+                .shell
+                  .range.range-xs-center
+                    .cell-sm-10.cell-xl-12
+                      h1.text-light(
+                        data-caption-animate='fadeInUp', 
+                        data-caption-delay='100'
+                        )
+                        | Financial solutions
+                        br
+                        span.text-regular from real professionals
+                      .h4.text-light(
+                        data-caption-animate='fadeInUp', 
+                        data-caption-delay='200'
+                        )
+                        | Sure, dealing with your finances can be intimidating. That's why we take the time to listen to you, learn your goals and then create your plan using John Doe's philosophies that reflect the latest academic research.
+                      .btn-group-wrap(
+                        data-caption-animate='fadeInUp', 
+                        data-caption-delay='300'
+                        )
+                        a.btn.btn-md.btn-white(href='advice.html'
+                        )
+                          span  Learn More
+                        a.btn.btn-md.btn-white(href='free-consultation.html'
+                        )
+                          span  Become a Client
+          .swiper-slide(
+            data-slide-bg='images/home-3-2050x935.jpg'
+            )
+            .swiper-caption.swiper-parallax(
+              data-speed='1', 
+              data-fade='false'
+              )
+              .swiper-slide-caption.section-50
+                .shell
+                  .range.range-xs-center
+                    .cell-sm-10.cell-xl-12
+                      h1.text-light(
+                        data-caption-animate='fadeInUp', 
+                        data-caption-delay='100'
+                        )
+                        | We know how to
+                        br
+                        span.text-regular manage your money
+                      .h4.text-light(
+                        data-caption-animate='fadeInUp', 
+                        data-caption-delay='200'
+                        )
+                        | Sure, dealing with your finances can be intimidating. That's why we take the time to listen to you, learn your goals and then create your plan using John Doe's philosophies that reflect the latest academic research.
+                      .btn-group-wrap(
+                        data-caption-animate='fadeInUp', 
+                        data-caption-delay='300'
+                        )
+                        a.btn.btn-md.btn-white(href='advice.html'
+                        )
+                          span  Learn More
+                        a.btn.btn-md.btn-white(href='free-consultation.html'
+                        )
+                          span  Become a Client
+        // Swiper Navigation
+        .swiper-button-prev.fa-angle-left.swiper-parallax(
+          data-speed='1'
+          )
+        .swiper-button-next.fa-angle-right.swiper-parallax(
+          data-speed='1'
+          )
+  
+
+
+  // Saving Solutions
+  section
+    ul.range.range-condensed.list-index
+      li.cell-md-4.bg-my-ly.section-50.section-xl-160
+        span.list-index-counter
+        h2.text-medium
+          | Saving
+          br
+          | Solutions
+        p.text-light.inset-left-15.inset-md-left-50.inset-xl-left-160.inset-right-15.inset-md-right-50.inset-xl-right-160
+          | There is a variety of saving plans which can be tailored to your needs, including: Tax Exempt Savings Regular Savings.
+        a.btn.btn-sm.btn-info-mod-1(href='planning.html'
+        ) Learn More
+      li.cell-md-4.bg-my-y.section-50.section-xl-160
+        span.list-index-counter
+        h2.text-medium
+          | Tax
+          br
+          | Planning
+        p.text-light.inset-left-15.inset-md-left-50.inset-xl-left-160.inset-right-15.inset-md-right-50.inset-xl-right-160
+          | Inheritance tax planning is an important element of your wealth management strategy, as it allows you to continue to help your loved ones after you're gone.
+        a.btn.btn-sm.btn-info-mod-1(href='planning.html'
+        ) Learn More
+      li.cell-md-4.section-50.section-xl-160(style='background-color: rgba(251, 187, 77, 0.48) !important;'
+      )
+        span.list-index-counter
+        h2.text-medium
+          | University Fee
+          br
+          | Planning
+        p.text-light.inset-left-15.inset-md-left-50.inset-xl-left-160.inset-right-15.inset-md-right-50.inset-xl-right-160
+          | We all want our children to have good prospects, which is why education fees planning is a vital wealth management matter that shouldn't be overlooked.
+        a.btn.btn-sm.btn-info-mod-1(href='planning.html'
+        ) Learn More
+  
+
+
+  // About
+  section.section-50.section-sm-bottom-90.section-xl-top-270.section-xl-bottom-310.relative.section-sm-divider.section-divider-vivid-cyan
+    .shell
+      .range
+        .cell-sm-6.cell-md-5.text-sm-left
+          h2.text-medium About
+          p.inset-xl-right-30.text-light
+            | I am John Doe, a senior advisor for an independently owned financial planning company called FinVertex. FinVertex is an International Financial Planning company with offices in multiple jurisdictions over the world.
+          p.inset-xl-right-30.text-light
+            | Working with FinVertex gives me the ability to advise international expatriates living in the middle east from where I live in USA.
+          a.btn.btn-xs.btn-info-mod-1(href='about.html'
+          )
+            span Explore More
+      .image-sm-absolute-right.offset-top-50.offset-sm-top-0
+        img(src='images/home-4-1025x976.jpg', alt='', width='1025', height='976'
+        )
+  
+
+
+  // Contacts
+  section.section-sm-divider.section-divider-caribbean-green.text-md-left.bg-gray-lighter-1
+    .shell.relative.content-foreground
+      ul.list-index.range.range-xs-center.range-md-left
+        li.cell-sm-6.text-white.relative.section-50.section-lg-85.section-xl-bottom-160
+          .inset-md-right-115
+            span.list-index-counter
+            h2.text-medium.text-white Sign Up
+            p.text-light.offset-lg-top-40
+              | Get subscriber only insights & news delivered  
+              br
+              |  by John Doe
+            // RD Mailform
+            form.rd-mailform.subscribe-form.text-center.text-md-left.text-lg-center(
+              data-form-output='form-output-global', 
+              data-form-type='subscribe', method='post', action='http://static.livedemo00.template-help.com/wt_58735/bat/rd-mailform.php'
+              )
+              .form-group
+                label.form-label(for='subscribe-email'
+                ) E-mail
+                input#subscribe-email.form-control(type='email', name='email', 
+                  data-constraints='@Required @Email'
+                  )
+              .btn-wrapper
+                button.btn.btn-sm.btn-info-mod-1(type='submit'
+                ) Submit
+            .bg-sm-absolute-left.bg-caribbean-green
+        li.cell-sm-6.cell-md-5.cell-md-preffix-1.section-50.section-lg-85
+          span.list-index-counter
+          h2.text-medium Contacts
+          address.contact-info
+            dl
+              dt  E-mail:
+              dd.text-light
+                a(href='mailto:#'
+                ) johndoe@demolink.org
+            dl
+              dt  Tel.:
+              dd.text-light
+                a(href='callto:#'
+                ) +1 800 777 6050
+            dl
+              dt  Address:
+              dd.text-light
+                | 222 Fashion Lane, Ste.
+                br
+                | 207 Tustin, CA 92780

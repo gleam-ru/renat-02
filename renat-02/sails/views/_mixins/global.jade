@@ -1,0 +1,43 @@
+//- ligtGray = '#f7f7f7';
+
+
+
+mixin json(data)
+  p #{JSON.stringify(data, null, 4)}
+
+//- вставка данных в тело страницы в виде скрипта,
+//- args == ["name", {data}]
+mixin globalVar(name, data)
+  if (typeof name !== 'undefined')
+    - var jsonString = JSON.stringify(data);
+    - if (!jsonString) console.warn('inlineData is undef: ', name);
+    script.
+      var store;
+      if (window.globalVar) {
+        store = window.globalVar;
+      }
+      else {
+        store = {};  
+      }
+      store['#{name}'] = !{jsonString ? jsonString.replace(/<\//g, "<\\/") : 'undefined'};
+      window.globalVar = store;
+
+
+
+mixin error(data)
+  .alert.alert-danger(role='alert')
+    button.close(type='button', data-dismiss='alert')
+      span(aria-hidden='true') ×
+      span.sr-only Close
+    strong
+    |  !{data}
+
+
+
+//- file:///D:/work/rumex/H-Code/www.themezaa.com/html/h-code/alert-massage.html
+//- mixin info(data)
+  div
+    .alert.alert-success(role='alert')
+      strong Alert!
+      |  !{data}
+

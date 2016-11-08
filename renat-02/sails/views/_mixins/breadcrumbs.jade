@@ -1,0 +1,10 @@
+mixin Breadcrumbs(list)
+  - var last = list.pop();
+  if (list.length)
+    div.col-md-12
+      .col-md-9(style="padding: 0")
+        ul.breadcrumb
+          for item in list
+            li
+              a(href=item.href) !{item.name}
+          li.active !{last.name}

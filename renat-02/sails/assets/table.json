@@ -1,0 +1,14 @@
+[
+  {
+
+    "firstname": null,
+    "surname": "adminov",
+    "email": "admin@host.org",
+    "login": "admin",
+    "id": 1,
+    "count": "1 минуты",
+    "interval": 0,
+    "createdAt": "2016-07-27T07:56:21.000Z",
+    "updatedAt": "2016-07-27T07:57:32.000Z"
+  }
+]

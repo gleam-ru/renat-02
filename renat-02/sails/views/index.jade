@@ -1,0 +1,16 @@
+extends ./_layouts/main.jade
+
+block append head
+  //- +globalVar('tags', tags)
+  //- script(src='/ViewControllers/index.js')
+  //- style.
+  if vue
+    script(src=vue)
+
+
+block content
+  if html
+    | #{html}
+  if vue  
+    #vue
+  
