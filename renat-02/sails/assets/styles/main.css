@@ -247,3 +247,17 @@ ul.no-dots>li {list-style: none;}
             color: #fff;
             }
 /*.page-content-wrap.cnt {background: #000;}*/
+
+
+
+
+
+
+
+.resp-tab-content-active ul {
+  margin: 0px 0px 20px 40px;
+  list-style: initial;
+  }
+.resp-tab-content-active ul li {
+  margin: 10px 0px;
+  }

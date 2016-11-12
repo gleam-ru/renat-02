@@ -1,0 +1,110 @@
+extends ../_layouts/main.jade
+
+block append head
+  //- script(src='/ViewControllers/index.js')
+  style.
+    .resp-tab-content-active {min-height: 650px;}
+
+
+block content
+  
+  section.breadcrumb
+    ul.inline-list
+      li
+        a(href='/') Home
+      li.active industries
+
+  section.section-85.section-xl-top-160.section-xl-bottom-195
+    .shell
+      // Responsive-tabs
+      #tabs.responsive-tabs.responsive-tabs-default(style='display: block; width: 100%;')
+        ul.resp-tabs-list
+          li.resp-tab-item.resp-tab-active(aria-controls='tab_item-0', role='tab') 
+            | Production
+          li.resp-tab-item(aria-controls='tab_item-1', role='tab') 
+            | Benefits of opening UAE
+          li.resp-tab-item(aria-controls='tab_item-2', role='tab') 
+            | Unique persectives
+          li.resp-tab-item(aria-controls='tab_item-3', role='tab') 
+            | Open proceedings
+          li.resp-tab-item(aria-controls='tab_item-4', role='tab') 
+            | Benefits of manufacturing
+          li.resp-tab-item(aria-controls='tab_item-5', role='tab') 
+            | Choise of FEZ 
+          li.resp-tab-item(aria-controls='tab_item-6', role='tab') 
+            | Leasing services
+          li.resp-tab-item(aria-controls='tab_item-7', role='tab') 
+            | Benefits of leasing
+        .resp-tabs-container
+
+
+          .fadeIn.animated.resp-tab-content.resp-tab-content-active(aria-labelledby='tab_item-0')
+            .responsive-tabs-heading Production
+            p.text-light Every day in the Emirates are lucrative deal for the supply of a wide variety of goods, and products of local manufacturers are popular both in the domestic market and abroad. Due to its advantageous geographical location of the country, the enterprise offers access to the most fast-growing markets of Asia and Africa.
+            p.text-light UAE is a profitable option for the start of production abroad
+            p.text-light The entire region and even the world recognizes products that are certified in the UAE. Manufactured goods in the UAE have the right to exit the market without custom tax of Gulf with its 100 million solvency of the population, receive the privilege for participation in state tenders auctions and competitions. 
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-1')
+            .responsive-tabs-heading Benefits of opening UAE
+            p.text-light Emirates  is the largest maritime hubs in the Persian Gulf and the Indian Ocean, the largest airport, one of the world's best ground logistics, perfect legislation. You can establish a factory in the United Arab Emirates and enjoy all the benefits and advantages of the proceedings in a favorable environment for business.
+              ul
+                li Strong support local companies by the state
+                li The absence of taxation, customs duties and charges
+                li Availability of various leasing programs
+                li Important trading and logistics hub between East and West
+                li A variety of loan programs and financing schemes
+                li A well-organized logistics infrastructure
+                li 100% repatriation of invested and earned capital
+                li The cheapness of labor attracted workers and places of residence
+                li Huge parts turnover, raw material for the production of any
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-2')
+            .responsive-tabs-heading Unique persective sales
+            p.text-light Products originating in the UAE, are not subject to the additional customs and other taxes, and do not meet any economic barriers and restrictions in any of the countries of the world.
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-3')
+            .responsive-tabs-heading Open proceedings
+            p.text-light If the marketing policy of your production company focused on the UAE domestic market, the company Reliant Management Consulting recommends to register a local company in Dubai. The emirates is one of the world's largest cargo port - Jebel Ali, which is capable of sending any shipment, not less developed and airways Airports Dubai International Airport and Al Maktoum International Airport is already taking a leading number of goods, while their construction and development continues.
+            
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-4')
+            .responsive-tabs-heading Benefits of manufacturing
+            p.text-light The absence of 5% customs duty in trade in the domestic market that is constantly evolving and has a high demand
+            p.text-light Lower than in all FEZ UAE, the cost of obtaining and annual license renewal as trade and production
+            p.text-light Finished room - fully equipped offices, warehouses, industrial workshops, which are ready to provide the best conditions.
+            p.text-light Save on services sales agent (required for all foreign companies and companies in the EPZs to trade in Dubai);
+            p.text-light Low cost of registration of resident visas for workers, investors, as well as family members, compared with BMS UAE
+            p.text-light A lower rental rate than most of the FEZ on the warehouse and industrial premises
+            p.text-light Full range of services for the organization of production in Dubai
+            p.text-light In addition to registration services production company, we can help at all stages of production start-up in Dubai and will assist with any current issues, such as staffing, legal support, interaction with public authorities, assistance in the management and control at the client's request.
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-5')
+            .responsive-tabs-heading Choise of FEZ
+            p.text-light FEZ located throughout the Emirates, they differ in specialization, cost and procedure for obtaining the license and rent. Selection of Free Economic Zone for the commencement of the proceedings should be made based on several factors:
+            ul
+              li The company's products - it is necessary to take into account features of the products and the specificity of its storage and transportation
+              li Sales orientation - abroad, the domestic market of the Emirates or companies located in EPZs
+              li The method of delivery of raw materials and components - import raw materials from abroad or purchase on the domestic market of the Emirates
+              li Export Path finished products - depending on how the product will be sent, is to choose the SEZ, offering access to the port or airport
+              li The number and ethnic composition of workers - invited foreign experts and workers recruited locally
+              li Launch Industry in UAE FEZ - easily, quickly and securely
+              li RMC always pays attention to every detail, which allows our customers to pick up necessary for registration of FEZ specific to their production as well as to avoid any "surprises" at all stages of its work
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-6')
+            .responsive-tabs-heading Leasing services
+            p.text-light Leasing in the UAE differs versatility and flexibility conditions. Take advantage of them can be complex for the purchase of expensive equipment, and small upgrades or implementation in the workplace. The contract concluded between the parties, typically involves technological maintenance and repair.
+            p.text-light Leasing is usually granted for a period of 1 to 5 years. The amount by which you can get the equipment is generally determined individually for each company. At the same time take advantage of leasing is possible at any stage of the enterprise, whether the choice of land or office space arrangement or replacement of obsolete equipment.
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-7')
+            .responsive-tabs-heading Benefits of leasing
+            p.text-light Modernization - leasing allows you to use the latest equipment, it does not use the existing lines of credit and capital.
+            p.text-light Flexible payments - payments on the contract may be carried out monthly, quarterly or even once a year, at the same time it is paid in equal instalments.
+            p.text-light Easy registration - procedure of registration of the lease in the UAE is characterized by simplicity, transparency and speed compared to obtain lending
+            p.text-light Flexible leasing conditions in the UAE - a financial instrument successful production
+            p.text-light All the advantages of leasing is easy to use for the successful operation of the enterprise, seek the advice of experienced professionals SORP.ae to help implement effective solutions and necessary equipment to receive the most favorable terms.
