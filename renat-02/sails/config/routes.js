@@ -15,6 +15,8 @@ module.exports.routes = {
         view: 'sample',
     },
 
+    'get  /static/:page' : 'Main.static',
+
     //
     // Auth
     //
