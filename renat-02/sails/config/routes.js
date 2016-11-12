@@ -11,6 +11,9 @@ module.exports.routes = {
     'get  /': {
         view: 'landing',
     },
+    'get  /sample': {
+        view: 'sample',
+    },
 
     //
     // Auth

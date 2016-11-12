@@ -1,0 +1,93 @@
+extends ./_layouts/main.jade
+
+block append head
+  //- script(src='/ViewControllers/index.js')
+  //- style.
+
+
+block content
+  
+  section.breadcrumb
+    ul.inline-list
+      li
+        a(href='/') Home
+      li.active Sample Page
+
+  section.section-85.section-xl-top-160.section-xl-bottom-195
+    .shell
+      // Responsive-tabs
+      .responsive-tabs.responsive-tabs-default(style='display: block; width: 100%;')
+        ul.resp-tabs-list
+          li.resp-tab-item.resp-tab-active(aria-controls='tab_item-0', role='tab') Investment Management
+          li.resp-tab-item(aria-controls='tab_item-1', role='tab') Retirement Planning
+          li.resp-tab-item(aria-controls='tab_item-2', role='tab') Long Term Care
+          li.resp-tab-item(aria-controls='tab_item-3', role='tab') Estate Planning
+          li.resp-tab-item(aria-controls='tab_item-4', role='tab') Social Security
+        .resp-tabs-container
+          .fadeIn.animated.resp-tab-content.resp-tab-content-active(aria-labelledby='tab_item-0', style='display:block')
+            .responsive-tabs-heading Investment Management
+            p.text-light
+              | I am working with clients, from individual investors to large financial institutions, to develop advanced portfolio management strategies to help them achieve specific goals for their own or their institution's financial future.
+            p.text-light How I organize my work:
+            p.text-light
+              | - Help clients navigate today's evolving markets and identify the opportunities that shape their portfolios and long-term investment goals
+              br
+              | - Develop and manage customized solutions for the world's leading pension plans, sovereign wealth funds, central banks, insurance companies, financial institutions, endowments, foundations, individuals and family offices
+              br
+              | - Advise clients on how to allocate assets to meet unique objectives, addressing the dynamic market environment
+              br
+              | - Research market ideas and build investment portfolios across a broad range of asset classes
+            p.text-light
+              | While I have a variety of services for my clients, many are looking for someone to manage their investments (whether these are retirement funds, joint accounts or trusts).
+              | I review each client's goals, investment experience and risk tolerance, and determine a financial investment plan best suited for that client. To meet my clients' needs I use a variety of methods to properly manage your assets.
+            p.text-light
+              | A big piece of this process I call "multi-dimensional diversification."  This involves multiple asset classes, multiple management styles at both strategic and tactical levels, and often multiple managers.
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-1')
+            .responsive-tabs-heading Retirement Planning
+            p.text-light
+              | It's not going to be your parents' retirement - rewarded at 65 with a gold watch, a guaranteed pension, and health insurance for life. For many peoples, retiring in this new century is a mystery. Earlier generations of workers could rely on employer-provided pensions, but now many workers will need to rely on their own work-related and personal savings plus Social Security benefits. These savings have to last longer because peoples are living longer, often into their eighties and nineties.
+            p.text-light
+              | If you are one of those people who want to plan - and are about 10 to 15 years from the day you retire - this booklet is for you. Today's (and tomorrow's) retirees may well have a new kind of retirement. With a longer and healthier life span, bikes, boats, planes, and RVs may be part of your life, because you are more likely than previous generations to be an active older American.
+            p.text-light
+              | Retirement can be a time to explore new possibilities or to slow down and fully enjoy the life you spent your working years building-or it can be a bit of both. Regardless of your path, you want to ensure that this phase is as financially secure and satisfying as it can be-a process that ideally begins with your first job and continues even after retirement begins.
+            p.text-light
+              | Here, I can take you expert guidance on all the elements that contribute to a good retirement: saving and investing; planning; maintaining your health; identifying activities and work to suit you; and, of course, being a savvy consumer.
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-2')
+            .responsive-tabs-heading Long Term Care
+            p.text-light
+              | Long-term care involves a variety of services designed to meet a person's health or personal care needs during a short or long period of time. These services help people live as independently and safely as possible when they can no longer perform everyday activities on their own.
+            p.text-light Most Care Provided at Home
+            p.text-light
+              | Long-term care is provided in different places by different caregivers, depending on a person's needs. Most long-term care is provided at home by unpaid family members and friends. It can also be given in a facility such as a nursing home or in the community, for example, in an adult day care center.
+            p.text-light
+              | The most common type of long-term care is personal care - help with everyday activities, also called "activities of daily living." These activities include bathing, dressing, grooming, using the toilet, eating, and moving around - for example, getting out of bed and into a chair.
+            p.text-light
+              | Long-term care insurance is a type of policy which is designed to provide for the financial welfare of an individual beyond a certain period. An example of this can be seen when a common disability package is replaced with its long-term counterpart. Such a plan is commonly seen with individuals who may have chronic illnesses (such as COPD or emphysema) and those who have become physically handicapped. This insurance policy exists in the United States, Canada and the United Kingdom. It can be known by its acronym LTCI or simply as LTI (Long-Term Insurance).
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-3')
+            .responsive-tabs-heading Estate Planning
+            p.text-light
+              | Many people believe they don't need estate planning because they think they don't have an estate. Or they think the value of their estate is not great enough to cause estate taxation, so what's the point?
+            p.text-light
+              | With few exceptions, everyone has an estate - even the young child with a custodial account in his name and the granddaughter who received a lovely piece of jewelry for her 16th birthday.
+            p.text-light
+              | Bottom line: If you own something of value that you would pass on to someone else upon your death, you have an estate. Whether you know it or not, you also have an estate plan. The state has one for you free of charge (well, sort of) if you don't get around to writing a will or designing a plan of your own.
+            p.text-light
+              | Broadly speaking, an estate plan encompasses the accumulation, conservation and distribution of an estate. A good plan will enhance and maintain the financial security of individuals and their families.
+            p.text-light
+              | When you're developing a plan for your estate, it's important to understand your entire financial picture. That's where I`m come in. Working with your tax and legal advisors, I will help coordinate your investment strategies to help ensure that your plan reflects your wishes for your legacy.
+            p.text-light
+              | Complete the form if you'd like to receive my three estate planning guides, which include information about the importance of having certain estate documents, maintaining beneficiary designations, and organizing your financial documents.
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-4')
+            .responsive-tabs-heading Social Security
+            p.text-light
+              | Social Security benefits are one of the most important parts of any retirement portfolio. A poor claiming decision can cost tens-of-thousands of dollars, while making the right decision can contribute significantly to one's financial security.
+            p.text-light
+              | However, Social Security is a complex system. I provide the tools to help you make the best Social Security planning. My reports present not only the optimal strategy, they also provide comparisons to other strategies that may work better when your entire financial situation is taken into consideration. My reports also help you advise about little-known Social Security strategies such as "file and suspend" and the restricted application, "free spousal" strategy.
+            p.text-light
+              | Your primary insurance amount, or PIA - the benefit you would get at full retirement age - determines the size of your monthly retirement check. According to the Social Security Administration's website, the PIA is based on the Average Indexed Monthly Earnings, or AIME, as applied to an inflation-adjusted formula. The PIA is then adjusted for whether you take retirement before or after your normal retirement age - 66 for those now reaching retirement age, but gradually adjusted to age 67 for those born after 1960.
+            p.text-light
+              | You can begin drawing reduced Social Security as early as 62. For every month you delay after reaching full retirement age, up to age 70, the monthly benefit increases.
+            p.text-light
+              | According to a 2010 report of the Senate Special Committee on Aging, for someone with an AIME of $5,000 in 2010, the PIA would total $1,971.
+            p.text-light
+              | In keeping with the original intent behind Social Security - a way to lift seniors out of poverty - lower-wage earners get a higher proportion of their earnings than higher-wage earners. The maximum monthly benefit that can be received in 2014 is $2,642 for a worker retiring at full retirement age.

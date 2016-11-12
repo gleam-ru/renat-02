@@ -32093,7 +32093,7 @@ html:not(.lt-ie10) .not-animated {
   }
 }
 
-/* 
+/*
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
@@ -32134,7 +32134,7 @@ html:not(.lt-ie10) .not-animated {
   }
 }
 
-/* 
+/*
  * 	Owl Carousel - Auto Height Plugin
  */
 .owl-height {
@@ -32145,7 +32145,7 @@ html:not(.lt-ie10) .not-animated {
   transition: height 500ms ease-in-out;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -32246,7 +32246,7 @@ html:not(.lt-ie10) .not-animated {
   display: block;
 }
 
-/* 
+/*
  * 	Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
@@ -32258,7 +32258,7 @@ html:not(.lt-ie10) .not-animated {
   transition: opacity 400ms ease;
 }
 
-/* 
+/*
  * 	Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {
@@ -39920,20 +39920,4 @@ a.pswp__share--download:hover {
 
 #habla_beta_container_do_not_rely_on_div_classes_or_names {
   display: none;
-}
-
-
-
-#body .extra-link a {
-    padding: 5px;
-    width: 55px;
-    height: 55px;
-    text-align: center;
-    line-height: 55px;
-    }
-#body .extra-link i.fa:before {
-  color: #fff;
-  z-index: 100;
-  position: relative;
-  font-size: 30px;
 }

@@ -1,21 +1,10 @@
-// цвет шрифта вкладок
-$admin-tabs-font-color: #333333;
-// темно синий цвет
-$admin-tabs-deep-blue: #0066b4;
-// голубой
-$admin-tabs-middle-blue: #0091ff;
-// бледно-голубой
-$admin-tabs-easy-blue: #dae8f2;
-// цвет границ
-$admin-tabs-border-color: #d9d9d9;
-// выбрать шаблон
-$admin-tabs-button-picker: #006cbf;
-// ширина поповера
-$popover-width: 450px;
-//тень у элементов
-$admin-content-item-shadow: 0 0 25px rgba(0,0,0,0.5);
-$admin-template-preview-bc: #dadada;
-$admin-layout-area-height: 600px;
-$admin-template-remove-widget: #53b5ff;
-$combo-border-color: #337ab7;
-$admin-tabs-text-color: #333333;
+// dark-green
+$green: #2b7250;
+$lighten-green: lighten($green, 10%);
+$darken-green: darken($green, 10%);
+
+// light-yellow
+$yellow: #fbbb4d;
+$lighten-yellow: lighten($yellow, 10%);
+$darken-yellow: #f69336;
+$more-darken-yellow: darken($darken-yellow, 10%);
