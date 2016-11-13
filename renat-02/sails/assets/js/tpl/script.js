@@ -517,7 +517,13 @@ $document.ready(function () {
     for (i = 0; i < plugins.responsiveTabs.length; i++) {
       var responsiveTabsItem = $(plugins.responsiveTabs[i]);
       responsiveTabsItem.easyResponsiveTabs({
-        type: responsiveTabsItem.attr("data-type") === "accordion" ? "accordion" : "default"
+        type: responsiveTabsItem.attr("data-type") === "accordion" ? "accordion" : "default",
+//         tabidentify: 'tab_identifier_child',
+// activetab_bg: false,
+// inactive_bg: false,
+// active_border_color: false,
+// active_content_border_color: false,
+
       });
     }
   }
