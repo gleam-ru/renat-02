@@ -21,7 +21,7 @@
 .pb-10 {padding-bottom: 10px !important;}
 .pl-10 {padding-left: 10px !important;}
 
-.ow-h {overflow: hidden;}
+.ow-h, .ov-h {overflow: hidden;}
 .pointer {cursor: pointer;}
 .ib {display: inline-block;}
 

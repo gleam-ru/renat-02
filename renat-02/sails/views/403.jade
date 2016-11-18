@@ -1,0 +1,22 @@
+extends ./_layouts/main.jade
+
+block append head
+  style.
+    .re-more{margin-top: 20px;}
+    .error{word-wrap: normal;}
+
+block title
+
+block err-content
+  .error-container
+    .error-code 403
+    .error-text Forbidden
+    .error-subtext
+      | #{data}
+    //- .error-actions
+      .row
+        .col-md-6
+          button.btn.btn-info.btn-block.btn-lg(onclick="document.location.href = '/';") Go to main page
+        .col-md-6
+          button.btn.btn-primary.btn-block.btn-lg(onclick='history.back();') Previous page
+

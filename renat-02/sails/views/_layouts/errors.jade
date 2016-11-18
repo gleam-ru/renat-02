@@ -1,0 +1,15 @@
+extends main.jade
+
+block append head
+  style.
+    #err {min-height: calc(100vh - 200px);}
+    .error-code {font-size: 70px; text-align: center;}
+    .error-text {font-size: 20px; text-align: center;}
+    .error-subtext {font-size: 12px; text-align: center;}
+
+block content
+  section#err.text-md-left.relative
+    .shell
+      block err-content
+
+block footer

@@ -62,49 +62,51 @@ html.wide.wow-animation.smoothscroll
                           a(href='/static/business-in-uae/') Business In UAE
                           ul.rd-navbar-dropdown
                             li
-                              a(href='/') Company setup
+                              a(href='/static/business-in-uae/company-setup/') Company setup
                             li
-                              a(href='/') Organization of business
+                              a(href='/static/business-in-uae/business-without-taxes/') Organization of business
                             li
-                              a(href='/') International market
+                              a(href='/static/business-in-uae/access-to-international-market/') International market
                             li
-                              a(href='/') Manufacturing
+                              a(href='/static/business-in-uae/manufacturing/') Manufacturing
                             li
-                              a(href='/') Investment In UAE
+                              a(href='/static/business-in-uae/investment-in-uae/') Investment In UAE
                           span.rd-navbar-submenu-toggle
                         li.rd-navbar--has-dropdown.rd-navbar-submenu
-                          a(href='/') Company registration
+                          a(href='/static/company-registration/') Company registration
                           ul.rd-navbar-dropdown
                             li
-                              a(href='/') Local company
+                              a(href='/static/company-registration/local-company/') Local company
                             li
-                              a(href='/') Free zone company
+                              a(href='/static/company-registration/free-zone-company/') Free zone company
                             li
-                              a(href='/') Offshore-ibc
+                              a(href='/static/company-registration/offshore-ibc/') Offshore-ibc
                             li
-                              a(href='/') Holding structures
+                              a(href='/static/company-registration/holding-structures/') Holding structures
                             li
-                              a(href='/') Complicated licenses
+                              a(href='/static/company-registration/complicated-license/') Complicated licenses
+                            li
+                              a(href='/static/company-registration/joint-venture/') Joint venture
                           span.rd-navbar-submenu-toggle
                         li.rd-navbar--has-dropdown.rd-navbar-submenu
-                          a(href='/') Business management
+                          a(href='/static/business-management/') Business management
                           ul.rd-navbar-dropdown
                             li
-                              a(href='/') Management consulting
+                              a(href='/static/business-management/management-consulting/') Management consulting
                             li
-                              a(href='/') Legal assistance
+                              a(href='/static/business-management/legal-assistance/') Legal assistance
                             li
-                              a(href='/') Open bank accounts
+                              a(href='/static/business-management/open-bank-accounts/') Open bank accounts
                           span.rd-navbar-submenu-toggle
                         li.rd-navbar--has-dropdown.rd-navbar-submenu
-                          a(href='/') Capabilities
+                          a(href='/static/capabilities/') Capabilities
                           ul.rd-navbar-dropdown
                             li
-                              a(href='/') Sales and marketing
+                              a(href='/static/capabilities/sales-and-marketing/') Sales and marketing
                             li
-                              a(href='/') Finance & development
+                              a(href='/static/capabilities/finance-and-deveopment/') Finance & development
                             li
-                              a(href='/') Diversification
+                              a(href='/static/capabilities/diversification/') Diversification
                           span.rd-navbar-submenu-toggle
                         li.mr-10
                           a(href='/static/contacts') Contact us
@@ -124,59 +126,59 @@ html.wide.wow-animation.smoothscroll
             //- include ./parts/topnav
             //- include ./parts/breadcrumbs
             block content
-
-          footer.page-foot.text-sm-left.section-50.section-lg-90.offset-md-top--40
-            .shell
-              .range
-                .cell-md-5.offset-top-10
-                  a.brand(href='/')
-                    img(src='images/footer-logo-266x55.png', alt='', width='266', height='55')
-                  p
-                    | Investment products and services available only to residents of : Arizona - AZ, California - CA, Hawaii - HI, Idaho - ID, New Jersey - NJ, New Mexico - NM, Oregon - OR, Washington - WA Securities and Investment Advice through John Doe & Company, A registered broker/dealer and Investment Advisor, Member FINRA and SIPC. 101 Serious Road, Fincity, FL 32707 Tel: (959) 603- 6035.| John Doe Financial Advisors is not an affiliate of Wall Street Company.
-                  p
-                    | All other trademarks and copyrights are the properties of their respective holders. This website provides information related to the subjects covered. Before making any financial or legal decisions, a professional should be consulted.
-                .cell-xs-8.cell-xs-preffix-3.cell-sm-6.cell-sm-preffix-0.cell-md-3.cell-md-preffix-1.text-left.offset-top-50.offset-md-top-0
-                  h3.text-medium Business in UAE
-                  ul.marked-list
-                    li
-                      a(href='/static/business-in-uae#tabs1') Business in UAE
-                    li
-                      a(href='/static/business-in-uae#tabs2') Company Start Up
-                    li
-                      a(href='/static/business-in-uae#tabs3') Register a company in UAE
-                    li
-                      a(href='/static/business-in-uae#tabs4') Choice of activity
-                    li
-                      a(href='/static/business-in-uae#tabs5') Choice of organization
-                    li
-                      a(href='/static/business-in-uae#tabs6') Choice of location
-                    li
-                      a(href='/static/business-in-uae#tabs7') Services for opening
-                .cell-xs-6.cell-xs-preffix-3.cell-sm-6.cell-sm-preffix-0.cell-md-3.offset-top-50.offset-md-top-0.text-left
-                  h3.text-medium Industries
-                  ul.marked-list
-                    li
-                      a(href='/static/industries#tabs1') Production
-                    li
-                      a(href='/static/industries#tabs2') Benefits of opening UAE
-                    li
-                      a(href='/static/industries#tabs3') Unique persectives
-                    li
-                      a(href='/static/industries#tabs4') Open proceedings
-                    li
-                      a(href='/static/industries#tabs5') Benefits of manufacturing
-                    li
-                      a(href='/static/industries#tabs6') Choise of FEZ
-                    li
-                      a(href='/static/industries#tabs7') Leasing services
-                    li
-                      a(href='/static/industries#tabs8') Benefits of leasing
-              p.offset-top-50
-                | Copyright ©  
-                span#copyright-year
-                |   
-                a(href='/')  Privacy Policy
-                // {%FOOTER_LINK}
+          block footer
+            footer.page-foot.text-sm-left.section-50.section-lg-90.offset-md-top--40
+              .shell
+                .range
+                  .cell-md-5.offset-top-10
+                    a.brand(href='/')
+                      img(src='images/footer-logo-266x55.png', alt='', width='266', height='55')
+                    p
+                      | Investment products and services available only to residents of : Arizona - AZ, California - CA, Hawaii - HI, Idaho - ID, New Jersey - NJ, New Mexico - NM, Oregon - OR, Washington - WA Securities and Investment Advice through John Doe & Company, A registered broker/dealer and Investment Advisor, Member FINRA and SIPC. 101 Serious Road, Fincity, FL 32707 Tel: (959) 603- 6035.| John Doe Financial Advisors is not an affiliate of Wall Street Company.
+                    p
+                      | All other trademarks and copyrights are the properties of their respective holders. This website provides information related to the subjects covered. Before making any financial or legal decisions, a professional should be consulted.
+                  .cell-xs-8.cell-xs-preffix-3.cell-sm-6.cell-sm-preffix-0.cell-md-3.cell-md-preffix-1.text-left.offset-top-50.offset-md-top-0
+                    h3.text-medium Business in UAE
+                    ul.marked-list
+                      li
+                        a(href='/static/business-in-uae#tabs1') Business in UAE
+                      li
+                        a(href='/static/business-in-uae#tabs2') Company Start Up
+                      li
+                        a(href='/static/business-in-uae#tabs3') Register a company in UAE
+                      li
+                        a(href='/static/business-in-uae#tabs4') Choice of activity
+                      li
+                        a(href='/static/business-in-uae#tabs5') Choice of organization
+                      li
+                        a(href='/static/business-in-uae#tabs6') Choice of location
+                      li
+                        a(href='/static/business-in-uae#tabs7') Services for opening
+                  .cell-xs-6.cell-xs-preffix-3.cell-sm-6.cell-sm-preffix-0.cell-md-3.offset-top-50.offset-md-top-0.text-left
+                    h3.text-medium Industries
+                    ul.marked-list
+                      li
+                        a(href='/static/industries#tabs1') Production
+                      li
+                        a(href='/static/industries#tabs2') Benefits of opening UAE
+                      li
+                        a(href='/static/industries#tabs3') Unique persectives
+                      li
+                        a(href='/static/industries#tabs4') Open proceedings
+                      li
+                        a(href='/static/industries#tabs5') Benefits of manufacturing
+                      li
+                        a(href='/static/industries#tabs6') Choise of FEZ
+                      li
+                        a(href='/static/industries#tabs7') Leasing services
+                      li
+                        a(href='/static/industries#tabs8') Benefits of leasing
+                p.offset-top-50
+                  | Copyright ©  
+                  span#copyright-year
+                  |   
+                  a(href='/')  Privacy Policy
+                  // {%FOOTER_LINK}
     
 
 

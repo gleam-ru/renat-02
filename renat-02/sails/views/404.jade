@@ -1,0 +1,16 @@
+extends ./_layouts/main.jade
+
+block title
+
+block err-content
+  .error-container
+    .error-code 404
+    .error-text page not found
+    .error-subtext
+      | Unfortunately we're having trouble loading the page you are looking for. Please wait a moment and try again or use action below.
+    //- .error-actions
+      .row
+        .col-md-6
+          button.btn.btn-info.btn-block.btn-lg(onclick="document.location.href = '/';") Go to main page
+        .col-md-6
+          button.btn.btn-primary.btn-block.btn-lg(onclick='history.back();') Previous page

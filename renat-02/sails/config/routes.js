@@ -16,6 +16,7 @@ module.exports.routes = {
     },
 
     'get  /static/:page' : 'Main.static',
+    'get  /static/:page/:subpage' : 'Main.static',
 
     //
     // Auth

@@ -1,0 +1,28 @@
+extends ./_layouts/errors.jade
+
+block append head
+  style.
+    .re-more{margin-top: 20px;}
+    .error{word-wrap: normal;}
+
+block err-content
+    .error-container
+      .error-code 500
+      .error-text INTERNAL SERVER ERROR
+      .error-subtext
+        | The server encountered an internal error or misconfiguration and was unable to complete your request.
+      //- .error-actions
+        .row
+          .col-md-6
+            button.btn.btn-info.btn-block.btn-lg(onclick="document.location.href = '/';") Go to main page
+          .col-md-6
+            button.btn.btn-primary.btn-block.btn-lg(onclick='history.back();') Previous page
+    .col-md-12.re-more
+      .panel.panel-danger
+        .panel-heading
+          .panel-title
+            | More about error
+        .panel-body
+          pre
+            .error.red.mb-10 #{data}
+            | #{data ? data.stack : 'interesting error...'}
