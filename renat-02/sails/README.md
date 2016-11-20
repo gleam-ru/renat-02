@@ -16,14 +16,20 @@ a [Sails](http://sailsjs.org) application
 /static/company-registration/offshore-ibc/
 /static/company-registration/holding-structures/
 /static/company-registration/complicated-license/
-/static/company-registration/joint-venture/
+--- /static/company-registration/joint-venture/
 
-/static/business-management/
-/static/business-management/management-consulting/
-/static/business-management/legal-assistance/
-/static/business-management/open-bank-accounts/
+--- /static/business-management/
+--- /static/business-management/management-consulting/
+--- /static/business-management/legal-assistance/
+--- /static/business-management/open-bank-accounts/
 
-/static/capabilities/
-/static/capabilities/sales-and-marketing/
-/static/capabilities/finance-and-deveopment/
-/static/capabilities/diversification/
+--- /static/capabilities/
+--- /static/capabilities/sales-and-marketing/
+--- /static/capabilities/finance-and-deveopment/
+--- /static/capabilities/diversification/
+
+
+
+http://joxi.ru/YmENX1Vh0b4Ba2
+#119b1b
+

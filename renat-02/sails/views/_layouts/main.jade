@@ -49,20 +49,22 @@ html.wide.wow-animation.smoothscroll
                       // RD Navbar Brand
                       .rd-navbar-brand
                         a.brand-name(href='#')
-                          img(src='images/header-logo-268x57.png', width='268', height='57')
+                          img(src='images/logo.png', width='268', height='57')
                       .rd-navbar-brand-mobile
                         a.brand-name(href='#')
-                          img(src='images/header-logo-mobile-268x57.png', width='268', height='57')
+                          img(src='images/logo.png', width='268', height='57')
                     .rd-navbar-nav-wrap
                       // RD Navbar Nav
                       ul.rd-navbar-nav
                         li.active
                           a(href='/') Home
                         li.rd-navbar--has-dropdown.rd-navbar-submenu
+                          //- @fixme - пока нет контента скрываю костылями.
+                          //- a(href='/static/business-in-uae/') Business In UAE
                           a(href='/static/business-in-uae/') Business In UAE
                           ul.rd-navbar-dropdown
                             li
-                              a(href='/static/business-in-uae/company-setup/') Company setup
+                              a(href='/static/business-in-uae/') Company setup
                             li
                               a(href='/static/business-in-uae/business-without-taxes/') Organization of business
                             li
@@ -73,7 +75,9 @@ html.wide.wow-animation.smoothscroll
                               a(href='/static/business-in-uae/investment-in-uae/') Investment In UAE
                           span.rd-navbar-submenu-toggle
                         li.rd-navbar--has-dropdown.rd-navbar-submenu
-                          a(href='/static/company-registration/') Company registration
+                          //- @fixme - пока нет контента скрываю костылями.
+                          //- a(href='/static/company-registration/') Company registration
+                          a(href='/static/company-registration/local-company/') Company registration
                           ul.rd-navbar-dropdown
                             li
                               a(href='/static/company-registration/local-company/') Local company
@@ -130,7 +134,7 @@ html.wide.wow-animation.smoothscroll
                 .range
                   .cell-md-5.offset-top-10
                     a.brand(href='/')
-                      img(src='images/footer-logo-266x55.png', alt='', width='266', height='55')
+                      img(src='images/logo.png', alt='', width='266', height='55')
                     p
                       | Investment products and services available only to residents of : Arizona - AZ, California - CA, Hawaii - HI, Idaho - ID, New Jersey - NJ, New Mexico - NM, Oregon - OR, Washington - WA Securities and Investment Advice through John Doe & Company, A registered broker/dealer and Investment Advisor, Member FINRA and SIPC. 101 Serious Road, Fincity, FL 32707 Tel: (959) 603- 6035.| John Doe Financial Advisors is not an affiliate of Wall Street Company.
                     p

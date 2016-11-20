@@ -1,0 +1,101 @@
+extends ../../_layouts/main.jade
+
+block append head
+  //- script(src='/ViewControllers/index.js')
+  style.
+    .resp-tab-content-active {min-height: 650px;}
+
+
+block content
+  
+  section.breadcrumb
+    ul.inline-list
+      li
+        a(href='/') Home
+      li.active Business in UAE
+
+  section.section-85.section-xl-top-160.section-xl-bottom-195
+    .shell
+      // Responsive-tabs
+      #tabs.responsive-tabs.responsive-tabs-default(style='display: block; width: 100%;')
+        ul.resp-tabs-list
+          li.resp-tab-item(aria-controls='tab_item-0', role='tab') 
+            | Business in UAE
+          li.resp-tab-item(aria-controls='tab_item-1', role='tab') 
+            | Company Start Up
+          li.resp-tab-item(aria-controls='tab_item-2', role='tab') 
+            | Register a company in UAE
+          li.resp-tab-item(aria-controls='tab_item-3', role='tab') 
+            | Choice of activity
+          li.resp-tab-item(aria-controls='tab_item-4', role='tab') 
+            | Choice of organization
+          li.resp-tab-item(aria-controls='tab_item-5', role='tab') 
+            | Choice of location
+          li.resp-tab-item(aria-controls='tab_item-6', role='tab') 
+            | Services for opening
+        .resp-tabs-container
+
+
+          .fadeIn.animated.resp-tab-content.resp-tab-content-active(aria-labelledby='tab_item-0')
+            .responsive-tabs-heading Business in UAE
+            p.text-light Reliant Management Consulting has been set up by several partners specialized in finance, law and marketing. The fusion of our experience in UAE in these fields has inspired us to create the company concentrated on cultivating ties with local financial institutions for establishing and building innovative businesses in line with Dubai`s vision and global market.
+            p.text-light Reliant Management Consulting Is a business Incubator that helps young entrepreneurs to start up their business in UAE and other worldwide jurisdictions.
+            p.text-light With our industry expertise we are able to provide wide range of services and to consult our customers on every level of business development of the company.
+            p.text-light Our professional team of market research, public relations, legal advisors and business consultants are able to advice our customers the best and cost effective ways of establishing companies and promoting their business ideas to the global market.
+            p.text-light The core idea of CBC is to establish a business community and create a platform for exchanging ideas and partnerships with local and international entrepreneurs.
+            p.text-light We are offering not only fast track business set up, we are establishing long run partnerships with our customers and we always remain in their disposal for any inquiries from their side at any time. 
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-1')
+            .responsive-tabs-heading Company Start Up
+            p.text-light UAE is one of most reliable jurisdictions to open and run the businesses. State imposes no taxes, the banking system works well, the rights of entrepreneurs are protected  like in no other country and there is a guaranteed withdrawal and transaction of funds. UAE has been ranked 23rd place in the world for ease of doing business, the 4th place in the category of "Trading across borders" and was recognized as the best place in the region to start a business.
+            p.text-light It is applicable to announce that UAE is new and more reliable substitution to traditional Offshore jurisdictions for various reasons, like: it has not been included in the grey and black lists of OECD, the FATF and other organizations, on the other hand, as UAE is not the member of OECD, it is not obliged to share information with financial institutions and other countries. 
+            p.text-light Geographical location of UAE allows international trade transactions and alignments to be executed from this country with ease and with many economical benefits.  The government, at the same time did everything to allow this ambitious plans to be implemented with simplicity. UAE has established one of the best(probably the best) logistics systems of ligaments and all transportation means work very well. 
+            p.text-light With Reliant Management Consulting any entrepreneur on any stage of development of his company can count on our support and expertise in setting up, developing and supporting his intellectual capital and business. We can become your reliable business ally with our expertise.
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-2')
+            .responsive-tabs-heading Register a company in UAE
+            p.text-light Before you register a company in the United Arab Emirates, first of all, you need to pay attention to the choice of the type of business and activity, to choose the right legal form and the place of registration. We will you to make a correct choice and make all necessary processes legally
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-3')
+            .responsive-tabs-heading Choice of activity
+            p.text-light In order to carry out the business activity a company must obtain a license, and the license may include certain different activities. We will help you to choose allowed activities under one license and get the optimal license for your business. Helping out enterpreneurs to do business in UAE it is our specialization.
+            p.text-light There are various types of licenses: 
+              ul
+                li Professional license - generally offer various kinds of services 
+                li Commercial license - includes mainly trading companies;
+            p.text-light Manufacturing companies - are associated with the processing of the goods or packaging of products for sale.
+            
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-4')
+            .responsive-tabs-heading Choice of organization
+            p.text-light There is a wide range of legal entities which are entitled to register the company. Our experts will help you to understand and choose the one that is most appropriate for your business. We are ready to provide full explanations of all the options and show you how to register a company in the United Arab Emirates.
+            p.text-light Legal Forms Of Companies Are: 
+              ul
+                li Joint-stock companies
+                li Individual businesses - under full control of the owner
+                li Branches of foreign companies - subdivisions companies abroad
+                li Associations - With various shareholders.
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-5')
+            .responsive-tabs-heading Choice of location
+            p.text-light Choosing the right location for the new company is one of the most important success factors. A local company, onshore companies in one of the free economic zone (FEZ) and international business companies have different advantages depending on the type of business and activity. Each has its own terms and conditions, and that is why it is important to understand - what suits your business.
+            p.text-light International Business company- allows you to start to do business only on the international market;
+            p.text-light Onshore company in the free economic zone- entitles you start the business at the international and the domestic market is limited to the United Arab Emirates;
+            p.text-light Local (local) company- allows you to start doing business on the international market and provides unlimited access to the internal market of the United Arab Emirates.
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-6')
+            .responsive-tabs-heading Services for opening and supporting
+            p.text-light Our company provides a full range of consulting services to entrepreneurs, which aim to open or further develop an existing business in the UAE. We are ready to take on the implementation of individual processes and the complete management of the project of any complexity. We offer complete solutions, including the organization and management of the business in the UAE:
+              ul
+                li registration of companies in the UAE
+                li registration of licenses of any type and complexity
+                li coordination in the relevant committees and departments
+                li obtaining the necessary permits and certificates
+                li production companies registered in the Ministry of Labour, the immigration office and the selection of personnel
+                li assistance in obtaining resident visas in the UAE for the founders, managers, other employees and their families
+                li opening of bank accounts in banks of the United Arab Emirates and other countries (including merchant accounts)
+                li assistance in finding funding for a business consulting company in UAE lending banks.
