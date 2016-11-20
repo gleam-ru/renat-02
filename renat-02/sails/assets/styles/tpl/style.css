@@ -1182,9 +1182,10 @@ table th[class*="col-"] {
   min-height: 0.01%;
 }
 
+/* @gleam */
 @media screen and (max-width: 1100px) {
 
-  div {display: block !important; width: 100% !important;}
+  /*div {display: block !important; width: 100% !important;}*/
   .page-content {
     min-width: 1000px !important;
   }
