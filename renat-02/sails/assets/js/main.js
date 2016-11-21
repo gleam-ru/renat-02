@@ -154,4 +154,20 @@ $(document).ready(function() {
     };
 
 
+    var pn = window.location.pathname;
+    if (pn !== '/') {
+        pn = pn.split('/').slice(0, -2).join('/');
+        $('.rd-navbar-nav > li > a').each(function() {
+            var a = $(this);
+            var li = a.parent();
+            li.removeClass('active');
+            if (pn.indexOf(li.data('menuanchor')) !== -1) {
+                li.addClass('active');
+            }
+        });
+    }
+
+
+
+
 });

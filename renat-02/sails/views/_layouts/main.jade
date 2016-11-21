@@ -22,7 +22,7 @@ html.wide.wow-animation.smoothscroll
           header.page-head
             //- navbar
             .rd-navbar-wrap
-              nav.rd-navbar(
+              nav.rd-navbar#menu(
                 data-layout='rd-navbar-fixed',
                 data-sm-layout='rd-navbar-fixed',
                 data-lg-layout='rd-navbar-static',
@@ -56,12 +56,12 @@ html.wide.wow-animation.smoothscroll
                     .rd-navbar-nav-wrap
                       // RD Navbar Nav
                       ul.rd-navbar-nav
-                        li.active
-                          a(href='/') Home
-                        li.rd-navbar--has-dropdown.rd-navbar-submenu
+                        li.active(data-menuanchor="home")
+                          a(href='#home') Home
+                        li.rd-navbar--has-dropdown.rd-navbar-submenu(data-menuanchor="business-in-uae")
                           //- @fixme - пока нет контента скрываю костылями.
                           //- a(href='/static/business-in-uae/') Business In UAE
-                          a(href='/static/business-in-uae/') Business In UAE
+                          a(href='#business-in-uae') Business In UAE
                           ul.rd-navbar-dropdown
                             li
                               a(href='/static/business-in-uae/') Company setup
@@ -74,10 +74,10 @@ html.wide.wow-animation.smoothscroll
                             li
                               a(href='/static/business-in-uae/investment-in-uae/') Investment In UAE
                           span.rd-navbar-submenu-toggle
-                        li.rd-navbar--has-dropdown.rd-navbar-submenu
+                        li.rd-navbar--has-dropdown.rd-navbar-submenu(data-menuanchor="company-registration")
                           //- @fixme - пока нет контента скрываю костылями.
                           //- a(href='/static/company-registration/') Company registration
-                          a(href='/static/company-registration/local-company/') Company registration
+                          a(href='#company-registration') Company registration
                           ul.rd-navbar-dropdown
                             li
                               a(href='/static/company-registration/local-company/') Local company
@@ -92,8 +92,8 @@ html.wide.wow-animation.smoothscroll
                             li
                               a(href='/static/company-registration/joint-venture/') Joint venture
                           span.rd-navbar-submenu-toggle
-                        li.rd-navbar--has-dropdown.rd-navbar-submenu
-                          a(href='/static/business-management/') Business management
+                        li.rd-navbar--has-dropdown.rd-navbar-submenu(data-menuanchor="business-management")
+                          a(href='#business-management') Business management
                           ul.rd-navbar-dropdown
                             li
                               a(href='/static/business-management/management-consulting/') Management consulting
@@ -102,8 +102,8 @@ html.wide.wow-animation.smoothscroll
                             li
                               a(href='/static/business-management/open-bank-accounts/') Open bank accounts
                           span.rd-navbar-submenu-toggle
-                        li.rd-navbar--has-dropdown.rd-navbar-submenu
-                          a(href='/static/capabilities/') Capabilities
+                        li.rd-navbar--has-dropdown.rd-navbar-submenu(data-menuanchor="capabilities")
+                          a(href='#capabilities') Capabilities
                           ul.rd-navbar-dropdown
                             li
                               a(href='/static/capabilities/sales-and-marketing/') Sales and marketing
@@ -112,8 +112,8 @@ html.wide.wow-animation.smoothscroll
                             li
                               a(href='/static/capabilities/diversification/') Diversification
                           span.rd-navbar-submenu-toggle
-                        li.mr-10
-                          a(href='/static/contacts') Contact us
+                        li.mr-10(data-menuanchor="contacts")
+                          a(href='#contacts') Contact us
                         li.extra-link
                           a(href='#')
                             i.fa.fa-facebook-square
