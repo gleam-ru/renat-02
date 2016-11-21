@@ -1,0 +1,33 @@
+//- @TODO: переделай меня
+
+extends ../../_layouts/main.jade
+
+block append head
+  //- script(src='/ViewControllers/index.js')
+  style.
+    .resp-tab-content-active {min-height: 650px;}
+
+
+block content
+  
+  section.breadcrumb
+    ul.inline-list
+      li
+        a(href='/') Home
+      li.active Company registration
+
+  section.section-85.section-xl-top-160.section-xl-bottom-195
+    .shell
+      // Responsive-tabs
+      #tabs.responsive-tabs.responsive-tabs-default(style='display: block; width: 100%;')
+        ul.resp-tabs-list
+          li.resp-tab-item(aria-controls='tab_item-0', role='tab') 
+            | Company registration
+        .resp-tabs-container
+
+
+          .fadeIn.animated.resp-tab-content(aria-labelledby='tab_item-0')
+            .responsive-tabs-heading Company Registration UAE
+            p.text-light When opening a company in the UAE, you get undeniable advantages. United Arab Emirates, as a tax-free country, has never been in the ""black"" list of FATF and did not fall under the category of ""tax havens"". Legislation of UAE depending on activity of the company and the business model provides a variety of solutions to the business organization. Entrust the solution of this issue to professionals with extensive experience in this field, knowledge of the specific nature of the local market.
+            p.text-light Reliant Management Consultancy will help to choose the optimal organizational form and business structure for your business in the UAE, if necessary, will build a group of related companies. We will organize the registration of local company in Dubai, companies in the free economic zones of the United Arab Emirates, international business companies for all lines of business, regardless of its complexity and the challenges ahead: whether it is asset protection, business structuring, or something else.
+            p.text-light If your business involves manufacturing, consulting, services in the service sector or trade contact Reliant Management Consultancy.  We know which option of the company formation varieties you need. 
