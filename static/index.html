@@ -1,59 +1,89 @@
-/**
- * app.js
- *
- * Use `app.js` to run your app without `sails lift`.
- * To start the server, run: `node app.js`.
- *
- * This is handy in situations where the sails CLI is not relevant or useful.
- *
- * For example:
- *   => `node app.js`
- *   => `forever start app.js`
- *   => `node debug app.js`
- *   => `modulus deploy`
- *   => `heroku scale`
- *
- *
- * The same command-line arguments are supported, e.g.:
- * `node app.js --silent --port=80 --prod`
- */
 
-// Ensure we're in the project directory, so relative paths work as expected
-// no matter where we actually lift from.
-process.chdir(__dirname);
 
-// Ensure a "sails" can be located:
-(function() {
-  var sails;
-  try {
-    sails = require('sails');
-  } catch (e) {
-    console.error('To run an app using `node app.js`, you usually need to have a version of `sails` installed in the same directory as your app.');
-    console.error('To do that, run `npm install sails`');
-    console.error('');
-    console.error('Alternatively, if you have sails installed globally (i.e. you did `npm install -g sails`), you can use `sails lift`.');
-    console.error('When you run `sails lift`, your app will still use a local `./node_modules/sails` dependency if it exists,');
-    console.error('but if it doesn\'t, the app will run with the global sails instead!');
-    return;
+
+<!DOCTYPE html><html class="wide wow-animation smoothscroll"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="favicon.ico"><!-- bower:css--><link rel="stylesheet" href="bower_components/magnific-popup/dist/magnific-popup.css"><link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.css"><!-- endbower--><link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,700"><link rel="stylesheet" href="styles/tpl/style.css"><link rel="stylesheet" href="styles/main.css"><link rel="stylesheet" href="css/my-style.css">
+
+<!-- bower:js--><script src="bower_components/jquery/dist/jquery.js"></script><script src="bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script><script src="bower_components/select2/dist/js/select2.js"></script><script src="bower_components/lodash/lodash.js"></script><script src="bower_components/fullpage.js/dist/jquery.fullpage.js"></script><!-- endbower--><script type="text/javascript" src="js/main.js"></script><style>#body header {
+  position: fixed !important;
+  width: 100%;
+}
+#body nav { background: rgba(0,0,0, 0.1); }
+#fullpage {display: none;}
+#fullpage > div {background-size: cover;}
+.one   {background-image: url('images/landing/1.jpg');}
+.two   {background-image: url('images/landing/2.jpg');}
+.three {background-image: url('images/landing/3.jpg');}
+.four  {background-image: url('images/landing/4.jpg');}
+.five  {background-image: url('images/landing/5.jpg');}
+.six   {background-image: url('images/landing/6.jpg');}
+
+
+.white {
+  color: #fff;
+  font-weight: 100;
+  padding: 20px 40px;
+  }
+.mxw {max-width: 700px; margin: auto;}
+
+.fixed-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  }
+.fixed-bottom > ul {display: flex; width: 100%;}
+.fixed-bottom > ul li {
+  flex: 1;
+  }
+.fixed-bottom > ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 40px 0px;
+  background: rgba(0,0,0, 0.5);
+  color: #fbbb4d;
+  }
+.fixed-bottom > ul li a:hover {
+  background: rgba(0,0,0, 0.8);
+  color: #fff;
   }
 
-  // Try to get `rc` dependency
-  var rc;
-  try {
-    rc = require('rc');
-  } catch (e0) {
-    try {
-      rc = require('sails/node_modules/rc');
-    } catch (e1) {
-      console.error('Could not find dependency: `rc`.');
-      console.error('Your `.sailsrc` file(s) will be ignored.');
-      console.error('To resolve this, run:');
-      console.error('npm install rc --save');
-      rc = function () { return {}; };
-    }
-  }
+#body .rd-navbar-nav > li > a {background: #2b7250; color: #fff;}
+  
+
+.black-wrapper {
+  background: rgba(0,0,0, 0.3);
+  margin-top: -10vh;
+}
 
 
-  // Start server
-  sails.lift(rc('sails'));
-})();
+
+
+</style><script>$(document).ready(function() {
+  $('#fullpage').css('display', 'block');
+  $('#fullpage').fullpage({
+    anchors: [
+      'home',
+      'business-in-uae',
+      'company-registration',
+      'business-management',
+      'capabilities',
+      'contacts',
+    ],
+    menu: '#menu',
+    scrollingSpeed: 700,
+  });
+});
+
+</script><title>
+ReliantMC</title><body id="body"><script>var store;
+if (window.globalVar) {
+  store = window.globalVar;
+}
+else {
+  store = {};  
+}
+store['defaultDateFormat'] = "YYYY-MM-DD";
+window.globalVar = store;
+
+
+</script><div class="page text-center"><header class="page-head"><div class="rd-navbar-wrap"><nav id="menu" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-sm-stick-up-offset="31px" data-lg-stick-up-offset="41px" data-xl-stick-up-offset="41px" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" class="rd-navbar"><div class="rd-navbar-inner"><div class="rd-navbar-outher"><!-- RD Navbar Panel--><div class="rd-navbar-panel"><!-- RD Navbar Toggle--><button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button><button data-rd-navbar-toggle=".rd-navbar-collapse" class="rd-navbar-collapse-toggle"><span></span></button><!-- RD Navbar Brand--><div class="rd-navbar-brand"><a href="index.html#" class="brand-name"><img src="images/logo.png" width="268" height="57"></a></div><div class="rd-navbar-brand-mobile"><a href="index.html#" class="brand-name"><img src="images/logo.png" width="268" height="57"></a></div></div><div class="rd-navbar-nav-wrap"><!-- RD Navbar Nav--><ul class="rd-navbar-nav"><li data-menuanchor="home" class="active"><a href="index.html#home">Home</a></li><li data-menuanchor="business-in-uae" class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="index.html#business-in-uae">Business In UAE</a><ul class="rd-navbar-dropdown"><li><a href="static/business-in-uae/index.html">Company setup</a></li><li><a href="static/business-in-uae/business-without-taxes/index.html">Organization of business</a></li><li><a href="static/business-in-uae/access-to-international-market/index.html">International market</a></li><li><a href="static/business-in-uae/manufacturing/index.html">Manufacturing</a></li><li><a href="static/business-in-uae/investment-in-uae/index.html">Investment In UAE</a></li></ul><span class="rd-navbar-submenu-toggle"></span></li><li data-menuanchor="company-registration" class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="index.html#company-registration">Company registration</a><ul class="rd-navbar-dropdown"><li><a href="static/company-registration/local-company/index.html">Local company</a></li><li><a href="static/company-registration/free-zone-company/index.html">Free zone company</a></li><li><a href="static/company-registration/offshore-ibc/index.html">Offshore-ibc</a></li><li><a href="static/company-registration/holding-structures/index.html">Holding structures</a></li><li><a href="static/company-registration/complicated-license/index.html">Complicated licenses</a></li><li><a href="http://localhost:1234/static/company-registration/joint-venture/">Joint venture</a></li></ul><span class="rd-navbar-submenu-toggle"></span></li><li data-menuanchor="business-management" class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="index.html#business-management">Business management</a><ul class="rd-navbar-dropdown"><li><a href="http://localhost:1234/static/business-management/management-consulting/">Management consulting</a></li><li><a href="http://localhost:1234/static/business-management/legal-assistance/">Legal assistance</a></li><li><a href="http://localhost:1234/static/business-management/open-bank-accounts/">Open bank accounts</a></li></ul><span class="rd-navbar-submenu-toggle"></span></li><li data-menuanchor="capabilities" class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="index.html#capabilities">Capabilities</a><ul class="rd-navbar-dropdown"><li><a href="http://localhost:1234/static/capabilities/sales-and-marketing/">Sales and marketing</a></li><li><a href="http://localhost:1234/static/capabilities/finance-and-deveopment/">Finance & development</a></li><li><a href="http://localhost:1234/static/capabilities/diversification/">Diversification</a></li></ul><span class="rd-navbar-submenu-toggle"></span></li><li data-menuanchor="contacts" class="mr-10"><a href="index.html#contacts">Contact us</a></li><li class="extra-link"><a href="index.html#"><i class="fa fa-facebook-square"></i></a><a href="index.html#"><i class="fa fa-twitter-square"></i></a><a href="index.html#"><i class="fa fa-google-plus-square"></i></a></li></ul></div></div></div></nav></div></header><main class="page-content"><!-- Swiper--><section><div id="fullpage"><div class="section one"><div class="h2 white">With a team of 2,800 talented financial services specialists on the ground in 40 countries across the world, we deliver a unique global perspective across four market-leading business divisions.</div><div class="separator divider"></div><div class="h2 white">An informed and impartial perspective to help our clients reach their goals through the design and execution of strategic M&A and financing solutions.</div></div><div class="section two"><div class="black-wrapper"><div class="h2 white">Business in UAE</div><div class="h5 white mxw">Lorem ipsum Duis exercitation magna enim reprehenderit aliquip ut ex anim in in consectetur voluptate occaecat adipisicing Ut dolore occaecat cupidatat cupidatat exercitation Excepteur Excepteur ut qui amet non in sed in velit eiusmod aliqua consectetur.</div></div><div class="fixed-bottom"><ul><li><a href="static/business-in-uae/index.html">Company setup</a></li><li><a href="static/business-in-uae/business-without-taxes/index.html">Organization of business</a></li><li><a href="static/business-in-uae/access-to-international-market/index.html">International market</a></li><li><a href="static/business-in-uae/manufacturing/index.html">Manufacturing</a></li><li><a href="static/business-in-uae/investment-in-uae/index.html">Investment In UAE</a></li></ul></div></div><div class="section three"><div class="black-wrapper"><div class="h2 white">Company registration</div><div class="h5 white mxw">Lorem ipsum Duis exercitation magna enim reprehenderit aliquip ut ex anim in in consectetur voluptate occaecat adipisicing Ut dolore occaecat cupidatat cupidatat exercitation Excepteur Excepteur ut qui amet non in sed in velit eiusmod aliqua consectetur.</div></div><div class="fixed-bottom"><ul><li><a href="static/company-registration/local-company/index.html">Local company</a></li><li><a href="static/company-registration/free-zone-company/index.html">Free zone company</a></li><li><a href="static/company-registration/offshore-ibc/index.html">Offshore-ibc</a></li><li><a href="static/company-registration/holding-structures/index.html">Holding structures</a></li><li><a href="static/company-registration/complicated-license/index.html">Complicated licenses</a></li><li><a href="http://localhost:1234/static/company-registration/joint-venture/">Joint venture</a></li></ul></div></div><div class="section four"><div class="black-wrapper"><div class="h2 white">Business management</div><div class="h5 white mxw">Lorem ipsum Duis exercitation magna enim reprehenderit aliquip ut ex anim in in consectetur voluptate occaecat adipisicing Ut dolore occaecat cupidatat cupidatat exercitation Excepteur Excepteur ut qui amet non in sed in velit eiusmod aliqua consectetur.</div></div><div class="fixed-bottom"><ul><li><a href="http://localhost:1234/static/business-management/management-consulting/">Management consulting</a></li><li><a href="http://localhost:1234/static/business-management/legal-assistance/">Legal assistance</a></li><li><a href="http://localhost:1234/static/business-management/open-bank-accounts/">Open bank accounts</a></li></ul></div></div><div class="section five"><div class="black-wrapper"><div class="h2 white">Capabilities</div><div class="h5 white mxw">Lorem ipsum Duis exercitation magna enim reprehenderit aliquip ut ex anim in in consectetur voluptate occaecat adipisicing Ut dolore occaecat cupidatat cupidatat exercitation Excepteur Excepteur ut qui amet non in sed in velit eiusmod aliqua consectetur.</div></div><div class="fixed-bottom"><ul class="rd-navbar-dropdown"><li><a href="http://localhost:1234/static/capabilities/sales-and-marketing/">Sales and marketing</a></li><li><a href="http://localhost:1234/static/capabilities/finance-and-deveopment/">Finance & development</a></li><li><a href="http://localhost:1234/static/capabilities/diversification/">Diversification</a></li></ul></div></div><div class="section six"><div class="black-wrapper"><div class="h2 white">Contact us</div><div class="h5 white mxw">UAE, Dubai, Business Bay, International Business Tower, Unit 703.</div></div><div class="fixed-bottom"><ul class="rd-navbar-dropdown"><li><a href="static/contacts/index.html">Contacts page</a></li></ul></div></div></div></section></main></div></body><script src="js/tpl/core.min.js"></script><script src="js/tpl/script.js"></script></head></html>
