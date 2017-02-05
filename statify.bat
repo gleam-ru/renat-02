@@ -1,0 +1,1 @@
+D:\Downloads\gleam\Dropbox\_BATs\wget64.exe --mirror -p --html-extension --convert-links http://localhost:1234/ -P C:\Users\gleam\work\renat-02\static

@@ -1,0 +1,117 @@
+#body .page-foot a:hover, #body .page-foot a:active,
+#body .contact-info dl dd a:hover, #body .contact-info dl dd a:active {
+  color: #f69336; }
+
+#body .btn-white {
+  display: inline-block;
+  color: #303334;
+  font-family: arial, sans-serif;
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+  z-index: 1; }
+
+#body .btn-white:after {
+  position: absolute;
+  content: '';
+  top: -1px;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border-radius: 28px;
+  background-image: -webkit-linear-gradient(top, #39976a 0%, #1d4d36 100%);
+  background-image: -o-linear-gradient(top, #39976a 0%, #1d4d36 100%);
+  background-image: linear-gradient(to bottom, #39976a 0%, #1d4d36 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2b7250', endColorstr='#FF2b7250', GradientType=0);
+  transition: opacity 0.5s ease-out;
+  z-index: -1;
+  opacity: 0;
+  will-change: opacity; }
+
+#body .btn-white:hover:after {
+  opacity: 1; }
+
+#body .btn-white span {
+  position: relative;
+  z-index: 3; }
+
+#body .ui-to-top:hover {
+  background: #1d4d36; }
+
+#body .ui-to-top {
+  background: #2b7250; }
+
+#body .breadcrumb .inline-list > li a:hover, #body .breadcrumb .inline-list > li a:active {
+  color: #fbbb4d; }
+
+#body .breadcrumb .inline-list > li.active {
+  color: #fbbb4d; }
+
+#body .btn-yellow {
+  border: solid 1px #ccc;
+  display: inline-block;
+  color: #303334;
+  font-family: arial, sans-serif;
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+  z-index: 1; }
+
+#body .btn-yellow:after {
+  position: absolute;
+  content: '';
+  top: -1px;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border-radius: 28px;
+  background-image: -webkit-linear-gradient(top, #fcce7f 0%, #ee790b 100%);
+  background-image: -o-linear-gradient(top, #fcce7f 0%, #ee790b 100%);
+  background-image: linear-gradient(to bottom, #fcce7f 0%, #ee790b 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2b7250', endColorstr='#FF2b7250', GradientType=0);
+  transition: opacity 0.5s ease-out;
+  z-index: -1;
+  opacity: 0;
+  will-change: opacity; }
+
+#body .btn-yellow:hover:after {
+  opacity: 1; }
+
+#body .btn-yellow span {
+  position: relative;
+  z-index: 3; }
+
+#body .bg-my-ly {
+  background: #fbbb4d !important; }
+
+#body .bg-my-y {
+  background: #f69336 !important; }
+
+#body .bg-my-g {
+  background: #2b7250 !important; }
+
+#body .extra-link a {
+  padding: 5px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+#body .extra-link i.fa:before {
+  color: #fff;
+  z-index: 100;
+  position: relative;
+  font-size: 30px; }
+
+.separator {
+  visibility: hidden;
+  margin-top: 50px; }
+
+dl.list-terms dd,
+dl.list-terms dd * {
+  text-align: justify; }
+
+html.rd-navbar-fixed-linked .page {
+  padding-top: 0px; }
