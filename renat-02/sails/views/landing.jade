@@ -8,6 +8,7 @@ block append head
       width: 100%;
     }
     #body nav { background: rgba(0,0,0, 0.1); }
+    #fullpage {display: none;}
     #fullpage > div {background-size: cover;}
     .one   {background-image: url('images/landing/1.jpg');}
     .two   {background-image: url('images/landing/2.jpg');}
@@ -37,7 +38,7 @@ block append head
       display: inline-block;
       width: 100%;
       height: 100%;
-      padding: 40px 20px;
+      padding: 40px 0px;
       background: rgba(0,0,0, 0.5);
       color: #fbbb4d;
       }
@@ -60,18 +61,19 @@ block append head
 
   script.
     $(document).ready(function() {
-        $('#fullpage').fullpage({
-          anchors: [
-            'home',
-            'business-in-uae',
-            'company-registration',
-            'business-management',
-            'capabilities',
-            'contacts',
-          ],
-          menu: '#menu',
-          scrollingSpeed: 700,
-        });
+      $('#fullpage').css('display', 'block');
+      $('#fullpage').fullpage({
+        anchors: [
+          'home',
+          'business-in-uae',
+          'company-registration',
+          'business-management',
+          'capabilities',
+          'contacts',
+        ],
+        menu: '#menu',
+        scrollingSpeed: 700,
+      });
     });
 
 
