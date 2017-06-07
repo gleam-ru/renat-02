@@ -3,72 +3,92 @@ extends ../_layouts/main.jade
 block append head
   //- script(src='/ViewControllers/index.js')
   style.
-
+    .breadcrumb {
+      background-image: url('../images/page-header/contacts-page.jpg');
+      padding: 100px;
+    }
 
 block content
-  
+
   section.breadcrumb
-    ul.inline-list
+    //- ul.inline-list
       li
         a(href='/') Home
-      li.active Contacts
+      li.active Complicated Licenses In UAE
 
-  // Contacts
-  section.text-md-left.relative.section-sm-divider.section-divider-vivid-cyan.section-bottom-45.section-md-bottom-0
+  section.text-md-left.section-60
     .shell
-      ul.list-index.range.range-sm-justify.range-xs-center
-        li.cell-sm-6.cell-lg-4.section-50.section-lg-85.section-xl-top-120.section-xl-bottom-350
-          span.list-index-counter
-          h2.text-medium Contacts
-          address.contact-info.offset-top-30
-            dl
-              dt  E-mail:
-              dd
-                a(href='mailto:#') johndoe@demolink.org
-            dl
-              dt  Tel.:
-              dd
-                a(href='callto:#') +1 800 777 6050
-            dl
-              dt  Address:
-              dd
-                | 222 Fashion Lane, Ste.
-                br
-                | 207 Tustin, CA 92780
-        li.cell-xs-12
-          .rd-google-map-sm-absolute
-            // RD Google Map
-            .rd-google-map
-              #rd-google-map.rd-google-map__model(data-zoom='15', data-x='-73.9874068', data-y='40.643180', data-styles='[{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]')
-              ul.map_locations
-                li(data-x='-73.9874068', data-y='40.643180')
-                  p 9870 St Vincent Place, Glasgow, DC 45 Fr 45.
-  
-  // Contacts
-  section.section-sm-divider.section-divider-caribbean-green.text-md-left.bg-gray-lighter-1
-    .shell.relative.content-foreground
-      ul.list-index.range.range-xs-center.range-md-left
-        li.bg-my-g.cell-sm-6.text-white.relative.section-50.section-lg-85.section-xl-bottom-160
-          .inset-md-right-115
-            span.list-index-counter
-            h2.text-medium.text-white Thanks for filling out our form!
-            p(style="color: #b1b0b0;").text-light.offset-lg-top-40
-              | We will look over your message and get back to you by tomorrow.
-              br
-              | Your friends at ReliantMC
-        li.cell-sm-5.cell-sm-preffix-1.cell-md-4.section-50.section-lg-85.section-xl-bottom-100
-          span.list-index-counter
-          h2.text-medium Have a Question?
-          // RD Mailform
-          form.rd-mailform.text-md-right.offset-top-25(data-form-output='form-output-global', data-form-type='contact', method='post', action='http://static.livedemo00.template-help.com/wt_58735/bat/rd-mailform.php')
-            .form-group.offset-bottom-5
-              label.form-label(for='contact-name') Name
-              input#contact-name.form-control(type='text', name='name', data-constraints='@Required')
-            .form-group.offset-top-0.offset-bottom-5
-              label.form-label(for='contact-email') E-mail
-              input#contact-email.form-control(type='email', name='email', data-constraints='@Required @Email')
-            .form-group.offset-top-0.offset-bottom-5
-              label.form-label.text-area-custom-height(for='contact-message') Question
-              textarea#contact-message.form-control.textarea-height-53(name='message', data-constraints='@Required')
-            button.btn.btn-sm.btn-min-width.btn-success.offset-top-25(type='submit')
-              span  Submit
+      h2.text-medium Contacts
+      dl.list-terms
+        
+
+        dt.h3.text-medium HONG KONG
+        dd.text-light
+          | Address:
+          br
+          | 11/F, Bangkok Bank Building, 14-20 Bonham Strand West, Sheung Wan, Hong Kong 
+          br
+          | Phone/Fax:
+          br
+          | +852 2828 3555 
+          br
+          | Email:
+          br
+          | cshk@futucapital.hk
+        
+
+
+
+
+        dt.h3.text-medium BEIJING
+        dd.text-light
+          | Address:
+          br
+          | Level 14, Tower A, Gateway Plaza, 18 Xiaguangli North Road, East Third Ring, Chaoyang District, Beijing 100027China, China
+          br
+          | Phone/Fax:
+          br
+          | +86 10 5829 9766 
+          br
+          | Email:
+          br
+          | cschina@futucapital.hk
+        
+
+
+
+
+        dt.h3.text-medium TAIPEI
+        dd.text-light
+          | B1, 36/F, Cathay Landmark, No.68, Sec. 5, Zhongxiao E. Rd., Xinyi Dist., Taipei City 110, Taiwan 
+          br
+          | Phone/Fax:
+          br
+          | +886 2 7710 9889 
+          br
+          | Email:
+          br
+          | cstaiwan@futucapital.hk
+
+
+        
+
+
+
+
+        dt.h3.text-medium MOSCOW
+        dd.text-light
+          | Address:
+          br
+          | Level 34, Mercury Tower, Presnenskaya Naberezhnaya, Moscow, Russia
+          br
+          | Phone/Fax:
+          br
+          | +7 495 #####
+          br
+          | Email:
+          br
+          | csrussia@futucapital.hk
+
+
+

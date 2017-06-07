@@ -1,7 +1,85 @@
-include ../../_mixins/navigation
-
-
-ul.x-navigation
-  li.xn-logo
-    include ./logo
-    +Navigation(sails.config.navigation)
+.rd-navbar-wrap
+  nav.rd-navbar#menu(
+    data-layout='rd-navbar-fixed',
+    data-sm-layout='rd-navbar-fixed',
+    data-lg-layout='rd-navbar-static',
+    data-sm-stick-up-offset='31px',
+    data-lg-stick-up-offset='41px',
+    data-xl-stick-up-offset='41px',
+    data-md-layout='rd-navbar-fullwidth',
+    data-md-device-layout='rd-navbar-fixed', 
+    data-lg-device-layout='rd-navbar-fixed'
+    )
+    .rd-navbar-inner
+      .rd-navbar-outher
+        .rd-navbar-panel
+          button.rd-navbar-toggle(
+            data-rd-navbar-toggle='.rd-navbar-nav-wrap'
+            )
+            span
+          button.rd-navbar-collapse-toggle(
+            data-rd-navbar-toggle='.rd-navbar-collapse'
+            )
+            span
+          .rd-navbar-brand
+            a.brand-name(href='#')
+              img(src='images/logo.png', width='268', height='57')
+          .rd-navbar-brand-mobile
+            a.brand-name(href='#')
+              img(src='images/logo.png', width='268', height='57')
+        .rd-navbar-nav-wrap
+          ul.rd-navbar-nav
+            //- --- -//
+            li.active(data-menuanchor="home")
+              a(href='#home') Home
+            //- --- -//
+            li.rd-navbar--has-dropdown.rd-navbar-submenu(data-menuanchor="about")
+              //- @fixme - пока нет контента скрываю костылями.
+              a(href='#about') About
+              ul.rd-navbar-dropdown
+                li
+                  a(href='/static/about-futu-capital/') About us
+                li
+                  a(href='/static/about-accreditation/') Accredetation
+                li
+                  a(href='/static/about-partners/') Out partners
+                li
+                  a(href='/static/about-risk-disclosure/') Risk 
+              span.rd-navbar-submenu-toggle
+            //- --- -//
+            li.rd-navbar--has-dropdown.rd-navbar-submenu(data-menuanchor="product-and-service")
+              //- @fixme - пока нет контента скрываю костылями.
+              a(href='#product-and-service') Product and service
+              ul.rd-navbar-dropdown
+                li
+                  a(href='/static/pas-fx-market/') FX market
+                li
+                  a(href='/static/pas-liquidity-solutions/') Liquidity solutions
+                li
+                  a(href='/static/pas-corporate-fx/') Corporate FX
+                li
+                  a(href='/static/pas-securities/') Securities
+                li
+                  a(href='/static/pas-wealth-management/') Wealth management
+              span.rd-navbar-submenu-toggle
+            //- --- -//
+            li(data-menuanchor="affiliate-program")
+              a(href='#affiliate-program') Affiliate program
+            //- --- -//
+            li.mr-10(data-menuanchor="contacts")
+              a(href='#contacts') Contacts
+            //- --- -//
+            li.extra-link
+              a(href='#')
+                | RU
+              a(href='#')
+                | EN
+              a(href='#')
+                | CH
+            //- li.extra-link
+              a(href='#')
+                i.fa.fa-facebook-square
+              a(href='#')
+                i.fa.fa-twitter-square
+              a(href='#')
+                i.fa.fa-google-plus-square
