@@ -9,12 +9,20 @@ module.exports = {
 
     static: function(req, res) {
         var pageName = req.param('page');
-        var subPageName = req.param('subpage');
-        if (subPageName) {
-            pageName += '/'+subPageName;
-        }
+        var lang = req.param('lang');
 
-        return res.render('static/'+pageName, _.extend({}, toView, {
+        if (!lang) {
+            lang = 'en';
+        }
+        if (!pageName) {
+            pageName = 'index';
+        }
+        console.debug(`Show lang: ${lang}, file: ${pageName}`);
+
+        res.locals.LNG_PREFIX = 'lng-';
+        res.locals.lng = lang;
+
+        return res.render('static/'+lang+'/'+pageName, _.extend({}, toView, {
             pageTitle: 'Static page',
             title: 'Static page',
             bc: [

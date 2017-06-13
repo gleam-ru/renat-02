@@ -170,4 +170,34 @@ $(document).ready(function() {
 
 
 
+    $('#fullpage').css('display', 'block');
+    $('#fullpage').fullpage({
+        anchors: [
+            'home',
+            'about',
+            'product-and-service',
+            'affiliate-program',
+            'contacts',
+        ],
+        menu: '#menu',
+        scrollingSpeed: 700,
+    });
+
+
+    $('.extra-link a').on('click', function(e) {
+        e.preventDefault();
+        var navigateTo = $(this).attr('href');
+        var pathname = window.location.pathname;
+        if (_.last(pathname) !== '/') {
+            pathname += '/';
+        }
+        if (pathname.length === 8) {
+            window.location.href = navigateTo+window.location.hash;
+            return;
+        }
+        window.location.href = navigateTo+'/'+pathname.split('/').slice(-2, -1)+window.location.hash;
+    });
+
+
+
 });

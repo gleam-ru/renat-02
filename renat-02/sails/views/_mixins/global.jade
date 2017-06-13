@@ -45,3 +45,8 @@ mixin error(data)
 
 mixin separator()
   .separator.divider
+
+
+mixin translate(text)
+  - var translation = DICT[text] && DICT[text][lng];
+  | #{translation || text}

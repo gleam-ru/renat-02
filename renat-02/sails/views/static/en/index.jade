@@ -1,79 +1,8 @@
-extends ./_layouts/main.jade
+extends ../../_layouts/main.jade
 
 block append head
-  //- script(src='/ViewControllers/index.js')
   style.
-    #body header {
-      position: fixed !important;
-      width: 100%;
-    }
-    #body nav { background: rgba(0,0,0, 0.1); }
-    #fullpage {display: none;}
-    #fullpage > div {background-size: cover;}
-    .one   {background-image: url('images/landing/1.jpg');}
-    .two   {background-image: url('images/landing/2.jpg');}
-    .three {background-image: url('images/landing/3.jpg');}
-    .four  {background-image: url('images/landing/4.jpg');}
-    .five  {background-image: url('images/landing/5.jpg');}
-    .six   {background-image: url('images/landing/6.jpg');}
-
-
-    .white {
-      color: #fff;
-      font-weight: 100;
-      padding: 20px 40px;
-      }
-    .mxw {max-width: 700px; margin: auto;}
-
-    .fixed-bottom {
-      position: absolute;
-      bottom: 0px;
-      width: 100%;
-      }
-    .fixed-bottom > ul {display: flex; width: 100%;}
-    .fixed-bottom > ul li {
-      flex: 1;
-      }
-    .fixed-bottom > ul li a {
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      padding: 40px 0px;
-      background: rgba(0,0,0, 0.5);
-      color: #fbbb4d;
-      }
-    .fixed-bottom > ul li a:hover {
-      background: rgba(0,0,0, 0.8);
-      color: #fff;
-      }
-
-    #body .rd-navbar-nav > li > a {background: #2b7250; color: #fff;}
-      
-
-    .black-wrapper {
-      background: rgba(0,0,0, 0.3);
-      margin-top: -10vh;
-    }
-
-
-
-
-
   script.
-    $(document).ready(function() {
-      $('#fullpage').css('display', 'block');
-      $('#fullpage').fullpage({
-        anchors: [
-          'home',
-          'about',
-          'product-and-service',
-          'affiliate-program',
-          'contacts',
-        ],
-        menu: '#menu',
-        scrollingSpeed: 700,
-      });
-    });
 
 
 block content
@@ -89,10 +18,10 @@ block content
         .h2.white
           | A New Name, A Brighter Future, Introducing FUTU Capital.
         +separator()
-        .h2.white
+        .h3.white
+          | Your One Stop Solution. Exchange Service. 
+        .h4.white
           | Excellent Rate, Safe & Convenient Foreign.
-          | Exchange Service. 
-          | Your One Stop Solution.
 
       
 
@@ -147,11 +76,11 @@ block content
         .black-wrapper
           .h2.white
             | Affiliate program
-          .h5.white.mxw
+          .h5.white.mxw.fs18
             | If you know how to attract Internet traffic, and wealthy investors listen to your recommendations, then the affiliate program of FUTU Capital will allow you to get a solid income without trading in the financial market by yourself. It is generated as a percentage of broker's commission on trading operations of clients.
-          .h5.white.mxw
+          .h5.white.mxw.fs18
             | Of course, the quality of the broker has a direct impact on attracting new clients. FUTU Capital, benefits from high confidence among wealthy investors, which is directly reflected both in the high percentage of conversion of your traffic and the volume of trading operations.
-          .h5.white.mxw
+          .h5.white.mxw.fs18
             | With the FUTU Capital broker, you have no restrictions on the maximum amount of payments, minimum number of clients, or number of transactions. This allows you to get one of the highest profit rates on the market from each transaction made by the attracted clients.
       
 

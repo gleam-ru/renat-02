@@ -22,64 +22,71 @@
             )
             span
           .rd-navbar-brand
-            a.brand-name(href='#')
+            a.brand-name(href='/#{LNG_PREFIX}#{lng}')
               img(src='images/logo.png', width='268', height='57')
           .rd-navbar-brand-mobile
-            a.brand-name(href='#')
+            a.brand-name(href='/#{LNG_PREFIX}#{lng}')
               img(src='images/logo.png', width='268', height='57')
         .rd-navbar-nav-wrap
           ul.rd-navbar-nav
             //- --- -//
             li.active(data-menuanchor="home")
-              a(href='#home') Home
+              a(href='/#{LNG_PREFIX}#{lng}#home')
+                +translate('Home')
             //- --- -//
             li.rd-navbar--has-dropdown.rd-navbar-submenu(data-menuanchor="about")
               //- @fixme - пока нет контента скрываю костылями.
-              a(href='#about') About
+              a(href='/#{LNG_PREFIX}#{lng}#about')
+                +translate('About')
               ul.rd-navbar-dropdown
                 li
-                  a(href='/static/about-futu-capital/') About us
+                  a(href='/#{LNG_PREFIX}#{lng}/about-futu-capital/')
+                    +translate('About us')
                 li
-                  a(href='/static/about-accreditation/') Accredetation
+                  a(href='/#{LNG_PREFIX}#{lng}/about-accreditation/')
+                    +translate('Accredetation')
                 li
-                  a(href='/static/about-partners/') Out partners
+                  a(href='/#{LNG_PREFIX}#{lng}/about-partners/')
+                    +translate('Our partners')
                 li
-                  a(href='/static/about-risk-disclosure/') Risk 
+                  a(href='/#{LNG_PREFIX}#{lng}/about-risk-disclosure/')
+                    +translate('Risk ')
               span.rd-navbar-submenu-toggle
             //- --- -//
             li.rd-navbar--has-dropdown.rd-navbar-submenu(data-menuanchor="product-and-service")
               //- @fixme - пока нет контента скрываю костылями.
-              a(href='#product-and-service') Product and service
+              a(href='/#{LNG_PREFIX}#{lng}#product-and-service')
+                +translate('Product and service')
               ul.rd-navbar-dropdown
                 li
-                  a(href='/static/pas-fx-market/') FX market
+                  a(href='/#{LNG_PREFIX}#{lng}/pas-fx-market/')
+                    +translate('FX market')
                 li
-                  a(href='/static/pas-liquidity-solutions/') Liquidity solutions
+                  a(href='/#{LNG_PREFIX}#{lng}/pas-liquidity-solutions/')
+                    +translate('Liquidity solutions')
                 li
-                  a(href='/static/pas-corporate-fx/') Corporate FX
+                  a(href='/#{LNG_PREFIX}#{lng}/pas-corporate-fx/')
+                    +translate('Corporate FX')
                 li
-                  a(href='/static/pas-securities/') Securities
+                  a(href='/#{LNG_PREFIX}#{lng}/pas-securities/')
+                    +translate('Securities')
                 li
-                  a(href='/static/pas-wealth-management/') Wealth management
+                  a(href='/#{LNG_PREFIX}#{lng}/pas-wealth-management/')
+                    +translate('Wealth management')
               span.rd-navbar-submenu-toggle
             //- --- -//
             li(data-menuanchor="affiliate-program")
-              a(href='#affiliate-program') Affiliate program
+              a(href='/#{LNG_PREFIX}#{lng}#affiliate-program')
+                +translate('Affiliate program')
             //- --- -//
             li.mr-10(data-menuanchor="contacts")
-              a(href='#contacts') Contacts
+              a(href='/#{LNG_PREFIX}#{lng}#contacts')
+                +translate('Contacts')
             //- --- -//
             li.extra-link
-              a(href='#')
-                | RU
-              a(href='#')
-                | EN
-              a(href='#')
+              a(href='/lng-ch', class="#{lng === 'ch' ? 'current' : 'non-current'}")
                 | CH
-            //- li.extra-link
-              a(href='#')
-                i.fa.fa-facebook-square
-              a(href='#')
-                i.fa.fa-twitter-square
-              a(href='#')
-                i.fa.fa-google-plus-square
+              a(href='/lng-en', class="#{lng === 'en' ? 'current' : 'non-current'}")
+                | EN
+              a(href='/lng-ru', class="#{lng === 'ru' ? 'current' : 'non-current'}")
+                | RU

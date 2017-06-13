@@ -1,0 +1,38 @@
+extends ../../_layouts/main.jade
+
+block append head
+  //- script(src='/ViewControllers/index.js')
+  style.
+    .breadcrumb {
+      background-image: url('../images/page-header/accreditation.jpg');
+      padding: 100px;
+    }
+
+block content
+
+  section.breadcrumb
+    //- ul.inline-list
+      li
+        a(href='/') Home
+      li.active Complicated Licenses In UAE
+
+  section.text-md-left.section-60
+    .shell
+      h2.text-medium Accreditation
+      table.table-with-images
+        tr
+          td
+            img(src='/images/accreditation.png')
+          td
+            p
+              b 香港证券及期货事务监察委员会 
+              br
+              | 处理证券牌照 
+              br
+              | 处理期货合约 
+              br
+              | 证券咨询 
+              br
+              | 资产管理 
+              br
+              a(href="https://www.sfc.hk/publicregWeb/corp/AZT137/details", target="_blank") CE No: AZT137

@@ -8,29 +8,17 @@
 
 module.exports.routes = {
 
-    'get  /': {
-        view: 'landing',
-    },
-    'get  /sample': {
-        view: 'sample',
-    },
+    'get /': '/lng-en',
 
-    'get  /static/:page' : 'Main.static',
-    'get  /static/:page/:subpage' : 'Main.static',
+    'get /lng-:lang': 'Main.static',
+    'get /lng-:lang/:page': 'Main.static',
 
-    //
-    // Auth
-    //
-    'get  /auth'       : 'Auth',
-    'post /doLogin'    : 'Auth.doLogin',
-    'get  /register'   : 'Auth.register',
-    'post /doRegister' : 'Auth.doRegister',
-    'get  /logout'     : 'Auth.logout',
+
 
     //  ╔╦╗╔═╗╔═╗╔╦╗
     //   ║ ║╣ ╚═╗ ║
     //   ╩ ╚═╝╚═╝ ╩
-    'get  /403': {response: 'forbidden'},
-    'get  /404': {response: 'notFound'},
-    'get  /500': {response: 'serverError'},
+    'get /403': {response: 'forbidden'},
+    'get /404': {response: 'notFound'},
+    'get /500': {response: 'serverError'},
 };
