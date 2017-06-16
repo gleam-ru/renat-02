@@ -37,7 +37,7 @@ module.exports.http = {
                     ch: '伙伴',
                 },
                 'Risk': {
-                    ru: 'Предупреждения о рисках',
+                    ru: 'Риск',
                     ch: '风险披露',
                 },
                 'Product and service': {
