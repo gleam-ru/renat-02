@@ -13,7 +13,7 @@ html.wide.wow-animation.smoothscroll
       include ./parts/_head
     title
       block pageTitle
-        | #{pageTitle ? pageTitle+' - ' : title ? title+' - ' : ''}
+        //- | #{pageTitle ? pageTitle+' - ' : title ? title+' - ' : ''}
         | FUTU Capital
     body#body
       +globalVar('defaultDateFormat', ddf)
