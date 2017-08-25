@@ -73,6 +73,11 @@ module.exports.http = {
                     ch: '联系',
                 },
                 //
+                'Login': {
+                    ru: 'Вход',
+                    ch: 'Login',
+                },
+                //
                 '%FOOTER%': {
                     en: 'Futu Securities International, an organization with multiple business functional roles including global foreign exchange broker, liquidity provider, foreign exchange trading system provider, securities broker, service provider for corporate treasury management platform and many more, provides foreign exchange transactions, liquidity solutions, international settlement and corporate hedge, wealth management, securities investment, financial IT solutions and other financial products and services for global customers and enterprises.',
                     ru: 'Futu Securities International - компания, занимающаяся оказанием различных услуг в сфере финансовых рынков. В том числе, является международным валютным брокером, провайдером ликвидности, брокером ценных бумаг. Более того, выполняет валютные операции, предоставляет решения по ликвидности. Оказывает услуги по управлению активами.',
