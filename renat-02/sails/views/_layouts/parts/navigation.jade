@@ -1,4 +1,43 @@
-﻿.rd-navbar-wrap
+style.
+  .langs-parent {
+    position: relative;
+  }
+  .langs {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    display: flex;
+  }
+  #body .langs a + a {
+    margin-left: 10px
+  }
+  #body .langs a {
+    flex: 1;
+    margin: 0px;
+    line-height: 23px !important;
+    height: 21px;
+    font-size: 13px;
+    padding-top: 0px;
+    color: #fff;
+    border-radius: 20px;
+  }
+
+
+mixin logo()
+  div(style="margin-top: -10px;")
+  a.brand-name(href='/#{LNG_PREFIX}#{lng}')
+    img(src='images/logo.png', width='268', height='57')
+  .langs-parent
+    .langs.extra-link
+      a(href='/lng-ch', class="#{lng === 'ch' ? 'current' : 'non-current'}")
+        | CH
+      a(href='/lng-en', class="#{lng === 'en' ? 'current' : 'non-current'}")
+        | EN
+      a(href='/lng-ru', class="#{lng === 'ru' ? 'current' : 'non-current'}")
+        | RU
+    
+
+.rd-navbar-wrap
   nav.rd-navbar#menu(
     data-layout='rd-navbar-fixed',
     data-sm-layout='rd-navbar-fixed',
@@ -22,11 +61,9 @@
             )
             span
           .rd-navbar-brand
-            a.brand-name(href='/#{LNG_PREFIX}#{lng}')
-              img(src='images/logo.png', width='268', height='57')
+            +logo()
           .rd-navbar-brand-mobile
-            a.brand-name(href='/#{LNG_PREFIX}#{lng}')
-              img(src='images/logo.png', width='268', height='57')
+            +logo()
         .rd-navbar-nav-wrap
           ul.rd-navbar-nav
             //- --- -//
@@ -84,9 +121,18 @@
                 +translate('Contacts')
             //- --- -//
             li.extra-link
-              a(href='/lng-ch', class="#{lng === 'ch' ? 'current' : 'non-current'}")
-                | CH
-              a(href='/lng-en', class="#{lng === 'en' ? 'current' : 'non-current'}")
-                | EN
-              a(href='/lng-ru', class="#{lng === 'ru' ? 'current' : 'non-current'}")
-                | RU
+              a(href='http://my.futucapital.hk')
+                +translate('Login')
+              a(href='http://webtrader.futucapital.hk')
+                | WT
+              //- .flex.ib(style="flex-flow: wrap;")
+                .flex.w-100
+                  .flex1 Login
+                  .flex1 WebTrader
+                .flex.w-100
+                  a.flex1(href='/lng-ch', class="#{lng === 'ch' ? 'current' : 'non-current'}")
+                    | CH
+                  a.flex1(href='/lng-en', class="#{lng === 'en' ? 'current' : 'non-current'}")
+                    | EN
+                  a.flex1(href='/lng-ru', class="#{lng === 'ru' ? 'current' : 'non-current'}")
+                    | RU

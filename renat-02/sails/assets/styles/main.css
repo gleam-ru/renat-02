@@ -9,7 +9,8 @@ body#body {
     text-transform: uppercase;
     }
 
-
+.flex {display: flex !important;}
+.flex1, .flex-1 {flex: 1 !important;}
 
 /* _cursor */
 .cp {cursor: default;}
@@ -31,6 +32,7 @@ body#body {
 .ow-h, .ov-h {overflow: hidden;}
 .pointer {cursor: pointer;}
 .ib {display: inline-block;}
+.block {display: block;}
 
 .i {font-style: italic;}
 .b {font-weight: bold;}

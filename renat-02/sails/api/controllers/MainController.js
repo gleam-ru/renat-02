@@ -23,8 +23,8 @@ module.exports = {
         res.locals.lng = lang;
 
         return res.render('static/'+lang+'/'+pageName, _.extend({}, toView, {
-            pageTitle: 'Static page',
-            title: 'Static page',
+            // pageTitle: 'Static page',
+            // title: 'Static page',
             bc: [
                 // {name: 'Home', href: '/'},
                 // {name: 'test', href: '/test'},
